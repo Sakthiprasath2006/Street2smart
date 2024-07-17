@@ -328,7 +328,17 @@ body {
         /* gap: 2px; */
         padding-left: 20px;
     }
-    
+}
+
+@media(max-width:1450px){
+    #navbarNavDropdown{
+        padding-left:40%;
+        margin-left: 0px;
+      }
+      .nav-item{
+        /* gap: 2px; */
+        padding-left: 18px;
+    }
 }
 
 @media(max-width:400px){
