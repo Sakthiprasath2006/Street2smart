@@ -9,18 +9,97 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <title>Street2smart</title>
 </head>
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+   
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .btn-volunteer,
+  .btn-donate {
+    margin: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+
+    .btn-volunteer,
+    .btn-donate {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+    }
+  }
+
+</style>
+<title>Street2Smart</title>
+</head>
+
+
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #0b704e;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0b704e;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Street2smart</a>
+      <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -40,250 +119,307 @@
             <button class="btn" id="dnt-btn" type="button">Donate</button>
           </li>
         </ul>
+
       </div>
     </div>
   </nav>
 
-  <header class="hero">
-    <img src="./images/hero_img.png" alt="Hero Image" class="img-fluid w-100">
-    <div class="hero-overlay">
+    <header class="hero">
+      <img src="./images/hero_img.png" alt="Hero Image" class="img-fluid">
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-white" id="para" style="padding-top: 2%;">
+              <h1>Empowering Communities, <span style="color: #fb8b01">Enriching lives</span></h1>
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8"><p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. 
+                  Our mission is to uplift individuals and communities through a range of 
+                  initiatives aimed at addressing fundamental needs and fostering sustainable development.</p></div>
+                <div class="col-2"></div>
+              </div>              
+              <div class="buttons">
+                <a href="volunteer.html"><button class="btn btn-volunteer">Volunteer</button></a>
+                <a href=""><button class="btn btn-donate">Donate</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Start -->
+    <section id="about" class="py-5">
       <div class="container">
-        <div class="row">
-          <div class="col text-center text-white" id="para">
-            <h1>Empowering Communities, <span style="color: #fb8b01">Enriching lives</span></h1>
-            <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our mission is to uplift individuals and communities through a range of initiatives aimed at addressing fundamental needs and fostering sustainable development.</p>
-            <div class="buttons">
-              <button class="btn btn-volunteer">Volunteer</button>
-              <button class="btn btn-donate">Donate</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Start -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-6">
-          <div class="position-relative overflow-hidden h-100" style="min-height: 400px">
-            <img class="position-absolute w-100 h-100 pt-5 pe-5" src="./images/about.png" alt="" style="object-fit: cover" />
-            <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="images/about-2.jpg" alt="" style="width: 200px; height: 200px" />
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="h-100">
-            <div class="d-inline-block rounded-pill py-1 px-3 mb-3" id="about-btn" style="background-color: #fb8b01;color: white;">
-              About Us
-            </div>
-            <h1 class="display-6 mb-5">Empowering Communities, Enriching Lives</h1>
-            <div class="bg-light border-5 rounded p-4 mb-4" id="border" style="border-bottom:1px solid #fb8b01;">
-              <p class="text-dark mb-2">
-                Street2smart is a nonprofit organization dedicated to serving those in need through a holistic approach to social welfare and sustainable development. We have been committed to addressing the most pressing challenges faced by individuals and communities, striving to create positive and lasting change.
-              </p>
-              <span style="color: #fb8b01;">-Street2smart</span>
-            </div>
-            <p class="mb-5" style="font-weight:lighter;color: black;">
-              We approach our work with empathy and understanding, striving to meet the diverse needs of those we serve. We uphold the highest standards of honesty, transparency, and accountability in all our operations. We believe in the power of partnerships and collaboration to maximize our impact and reach.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About End -->
-
-  <!-- Our Mission -->
-  <section id="our-mission" class="py-5">
-    <div class="container">
-      <div class="text-center mx-auto mb-5" style="max-width: 500px">
-        <div class="d-inline-block rounded-pill py-1 px-3 mb-3" style="background-color:#fb8b01;color:white;">
-          Our missions
-        </div>
-        <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
-      </div>
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5" style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/providing-food.png" alt="" />
-            <h4 class="mb-3">Providing Food, Clothing, and Shelter</h4>
-            <p class="mb-4">
-              No one should have to worry about their next meal, a safe place to sleep, or having adequate clothing. We provide essential resources to ensure everyone in our community has access to these basic necessities.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5" style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/education.png" alt="" />
-            <h4 class="mb-3">Education and Sharing of Knowledge</h4>
-            <p class="mb-4">
-              Education is a powerful tool for change. We offer educational programs and workshops to empower individuals with the knowledge and skills they need to succeed. From literacy classes to vocational training, we are committed to lifelong learning.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5" style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/empowering.png" alt="" />
-            <h4 class="mb-3">Empowering People</h4>
-            <p class="mb-4">
-              Empowerment is at the heart of what we do. By providing resources, support, and opportunities for personal growth, we enable individuals to take control of their lives and build a better future for themselves and their families.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Our Mission End -->
-
-   <!-- Our Mission -->
-   <section id="our-mission" class="py-5">
-    <div class="container">
-      
-      <div class="row g-4 justify-content-center">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5" style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/job.png" alt="" />
-            <h4 class="mb-3">Employment Opportunities</h4>
-            <p class="mb-4">
-             
-              We connect job seekers with employers, provide job training, and support career development. Our goal is to help individuals find sustainable employment and achieve financial independence.
-
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5" style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/support.png" alt="" />
-            <h4 class="mb-3">Support Other Non-profits</h4>
-            <p class="mb-4">
-              Our reach extends beyond our local community. We collaborate with other nonprofits and NGOs worldwide to share resources, knowledge, and support, amplifying our impact on a global scale.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5" style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/scholarship.png" alt="" />
-            <h4 class="mb-3">Provide Scholarship To Students</h4>
-            <p class="mb-4">
-              Empowerment is at the heart of what we do. By providing resources, support, and opportunities for personal growth, we enable individuals to take control of their lives and build a better future for themselves and their families.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Our Mission End -->
-
-
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-        <div class="d-inline-block rounded-pill py-1 px-3 mb-3" style="color:white;background-color: #fb8b01;">
-          Team Members
-        </div>
-        <h1 class="display-6 mb-5">Let's Meet With Our Ordinary Soldiers</h1>
-      </div>
-      <div class="row g-4" id="team">
-        <div class="col-lg-3 col-md-6 ">
-          <div class="team-item position-relative rounded overflow-hidden">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="images/team-1.jpg" alt="" />
-            </div>
-            <div class="team-text bg-light text-center p-4">
-              <h5>Full Name</h5>
-              <p class="text-primary">Designation</p>
-              <div class="team-social text-center">
-                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-          <div class="team-item position-relative rounded overflow-hidden">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="images/team-2.jpg" alt="" />
-            </div>
-            <div class="team-text bg-light text-center p-4">
-              <h5>Full Name</h5>
-              <p class="text-primary">Designation</p>
-              <div class="team-social text-center">
-                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-          <div class="team-item position-relative rounded overflow-hidden">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="images/team-3.jpg" alt="" />
-            </div>
-            <div class="team-text bg-light text-center p-4">
-              <h5>Full Name</h5>
-              <p class="text-primary">Designation</p>
-              <div class="team-social text-center">
-                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 ">
-          <div class="team-item position-relative rounded overflow-hidden">
-            <div class="overflow-hidden">
-              <img class="img-fluid" src="images/team-4.jpg" alt="" />
-            </div>
-            <div class="team-text bg-light text-center p-4">
-              <h5>Full Name</h5>
-              <p class="text-primary">Designation</p>
-              <div class="team-social text-center">
-                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer" style="text-align: center;">
-    <div class="container py-5">
         <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
-                <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our mission is to uplift individuals and communities through a range of initiatives aimed at addressing fundamental needs and fostering sustainable development.</p>
-                <div class="row">
-                  <div class="col-3"></div>
-                    <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
+          <div class="col-lg-6">
+            <div class="position-relative overflow-hidden h-100" style="min-height: 400px">
+              <img class="position-absolute w-100 h-100 pt-5 pe-5" src="./images/about.png" alt=""
+                style="object-fit: cover" />
+              <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="images/about-2.jpg" alt=""
+                style="width: 200px; height: 200px" />
             </div>
-            <div class="col-lg-4 col-md-6" id="add">
-                <h5 class="text-light mb-4">Address</h5>
-                <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="h-100">
+              <div class="d-inline-block rounded-pill py-1 px-3 mb-3" id="about-btn"
+                style="background-color: #fb8b01;color: white;">
+                About Us
+              </div>
+              <h1 class="display-6 mb-5">Empowering Communities, Enriching Lives</h1>
+              <div class="bg-light border-5 rounded p-4 mb-4" id="border" style="border-bottom:1px solid #fb8b01;">
+                <p class="text-dark mb-2">
+                  Street2smart is a nonprofit organization dedicated to serving those in need through a holistic
+                  approach to social welfare and sustainable development. We have been committed to addressing the most
+                  pressing challenges faced by individuals and communities, striving to create positive and lasting
+                  change.
+                </p>
+                <span style="color: #fb8b01;">-Street2smart</span>
+              </div>
+              <p class="mb-5" style="font-weight:lighter;color: black;">
+                We approach our work with empathy and understanding, striving to meet the diverse needs of those we
+                serve. We uphold the highest standards of honesty, transparency, and accountability in all our
+                operations. We believe in the power of partnerships and collaboration to maximize our impact and reach.
+              </p>
             </div>
-            <div class="col-lg-4 col-md-6" id="quick">
-                <h5 class="text-light mb-3">Quick Links</h5>
-                <a class="btn btn-link" href="#about">About</a><br>
-                <a class="btn btn-link" href="">Contact Us</a><br>
-                <a class="btn btn-link" href="">Events</a><br>
-                <a class="btn btn-link" href="volunteer.html">Volunteer</a>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Our Mission -->
+    <section id="our-mission" class="py-5">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px">
+          <div class="d-inline-block rounded-pill py-1 px-3 mb-3" style="background-color:#fb8b01;color:white;">
+            Our missions
+          </div>
+          <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+              style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <img class="img-fluid mb-4" src="./images/icons/providing-food.png" alt="" />
+              <h4 class="mb-3">Providing Food, Clothing, and Shelter</h4>
+              <p class="mb-4">
+                No one should have to worry about their next meal, a safe place to sleep, or having adequate clothing.
+                We provide essential resources to ensure everyone in our community has access to these basic
+                necessities.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+              style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <img class="img-fluid mb-4" src="./images/icons/education.png" alt="" />
+              <h4 class="mb-3">Education and Sharing of Knowledge</h4>
+              <p class="mb-4">
+                Education is a powerful tool for change. We offer educational programs and workshops to empower
+                individuals with the knowledge and skills they need to succeed. From literacy classes to vocational
+                training, we are committed to lifelong learning.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+              style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <img class="img-fluid mb-4" src="./images/icons/empowering.png" alt="" />
+              <h4 class="mb-3">Empowering People</h4>
+              <p class="mb-4">
+                Empowerment is at the heart of what we do. By providing resources, support, and opportunities for
+                personal growth, we enable individuals to take control of their lives and build a better future for
+                themselves and their families.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Mission End -->
+
+    <!-- Our Mission -->
+    <section id="our-mission" class="py-5">
+      <div class="container">
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+              style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <img class="img-fluid mb-4" src="./images/icons/job.png" alt="" />
+              <h4 class="mb-3">Employment Opportunities</h4>
+              <p class="mb-4">
+
+                We connect job seekers with employers, provide job training, and support career development. Our goal is
+                to help individuals find sustainable employment and achieve financial independence.
+
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+              style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <img class="img-fluid mb-4" src="./images/icons/support.png" alt="" />
+              <h4 class="mb-3">Support Other Non-profits</h4>
+              <p class="mb-4">
+                Our reach extends beyond our local community. We collaborate with other nonprofits and NGOs worldwide to
+                share resources, knowledge, and support, amplifying our impact on a global scale.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+              style="box-shadow: 0 4px 8px 0 rgba(216, 20, 20, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+              <img class="img-fluid mb-4" src="./images/icons/scholarship.png" alt="" />
+              <h4 class="mb-3">Provide Scholarship To Students</h4>
+              <p class="mb-4">
+                Empowerment is at the heart of what we do. By providing resources, support, and opportunities for
+                personal growth, we enable individuals to take control of their lives and build a better future for
+                themselves and their families.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Mission End -->
+
+
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+          <div class="d-inline-block rounded-pill py-1 px-3 mb-3" style="color:white;background-color: #fb8b01;">
+            Team Members
+          </div>
+          <h1 class="display-6 mb-5">Let's Meet With Our Ordinary Soldiers</h1>
+        </div>
+        <div class="row g-4" id="team">
+          <div class="col-lg-3 col-md-6 ">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="images/team-1.jpg" alt="" />
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Full Name</h5>
+                <p class="text-primary">Designation</p>
+                <div class="team-social text-center">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 ">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="images/team-2.jpg" alt="" />
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Full Name</h5>
+                <p class="text-primary">Designation</p>
+                <div class="team-social text-center">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 ">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="images/team-3.jpg" alt="" />
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Full Name</h5>
+                <p class="text-primary">Designation</p>
+                <div class="team-social text-center">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 ">
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="images/team-4.jpg" alt="" />
+              </div>
+              <div class="team-text bg-light text-center p-4">
+                <h5>Full Name</h5>
+                <p class="text-primary">Designation</p>
+                <div class="team-social text-center">
+                  <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
+      style="text-align: center;">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
+            <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
+              mission is to uplift individuals and communities through a range of initiatives aimed at addressing
+              fundamental needs and fostering sustainable development.</p>
+            <div class="row">
+              <div class="col-3"></div>
+              <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" id="add">
+            <h5 class="text-light mb-4">Address</h5>
+            <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+            <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          </div>
+          <div class="col-lg-4 col-md-6" id="quick">
+            <h5 class="text-light mb-3">Quick Links</h5>
+            <a class="btn btn-link" href="#about">About</a><br>
+            <a class="btn btn-link" href="">Contact Us</a><br>
+            <a class="btn btn-link" href="">Events</a><br>
+            <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // JavaScript to add slide-in class on scroll
+      document.addEventListener('DOMContentLoaded', function () {
+        const serviceItems = document.querySelectorAll('.service-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('slide-in');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+  
+        serviceItems.forEach(item => {
+          observer.observe(item);
+        });
+      });
+    </script>
+    
+    
 </body>
+
 </html>

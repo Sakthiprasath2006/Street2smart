@@ -1,26 +1,30 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .nav-link {
-    color: #fff !important;
-    margin-right: 1rem;
+    font-family: "Quicksand", sans-serif;
 }
 
 #dnt-btn {
     background-color: #fb8b01;
     color: #fff;
+    width:150%;     
+}
+
+.nav-link{
+    color: white; 
+    font-weight:500;  
+}
+
+.nav-item{
+    padding-left: 40px;
 }
 
 .hero {
     position: relative;
     text-align: center;
+    
+}
+.hero h1{
+    font-weight: bolder;
 }
 
 .hero img {
@@ -43,13 +47,15 @@ body {
 #para {
     margin-top: 15%;
     backdrop-filter: blur(8px);
+    justify-content: center;
 
 }
 
 .btn-volunteer {
     background-color: #0b704e;
     color: white;
-    width: 12%;
+    width: 20%;
+    font-size: 1.2rem;
 }
 
 .btn-volunteer:hover {
@@ -60,7 +66,9 @@ body {
 .btn-donate {
     background-color: #fb8b01;
     color: white;
-    width: 12%;
+    width: 20%;
+    font-size: 1.2rem;
+    
 }
 
 .btn-donate:hover {
@@ -76,11 +84,13 @@ body {
 
 .hero-txt p {
     font-size: 1.2rem;
+    justify-content: center;
 }
 
 .buttons .btn-volunteer,
 .buttons .btn-donate {
-    margin: 0.5rem;
+    margin: 5px;
+    margin-left: 3%;
 }
 
 .section-title {
@@ -124,7 +134,7 @@ body {
     }
 
     .team-text p {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 }
 
@@ -134,7 +144,7 @@ body {
     }
 
     .hero-txt p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .service-item img {
@@ -143,11 +153,11 @@ body {
     }
 
     .team-text h5 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .team-text p {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 }
 
@@ -256,11 +266,82 @@ body {
 
     .hero-overlay {
         position: absolute;
-       
+        margin-top: auto;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+       
+    }
+}
+/* CSS for slide-in animation */
+@keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* CSS for zoom-in hover effect */
+  .service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(216, 20, 20, 0.3), 0 12px 40px 0 rgba(0, 0, 0, 0.22);
+}
+
+#volunteer h4{
+    padding-left: 5%;
+    margin-left: 5%;
+}
+
+
+#navbarNavDropdown{
+    margin-left: 40%;
+  }
+  
+
+
+@media (max-width:1310px){
+    #navbarNavDropdown{
+        padding-left:20%;
+        margin-left: 0;
+      }
+      .nav-item{
+        /* gap: 2px; */
+        padding-left: 20px;
+    }
+    
+}
+
+@media(max-width:400px){
+    .hero h1{
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .hero img {
+        width: 100%;
+        margin-top: 500px;
+        height: auto;
+        backdrop-filter: none;
+        display: block;
+    }
+   
 }
