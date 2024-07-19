@@ -6,7 +6,8 @@ body {
 #dnt-btn {
     background-color: #fb8b01;
     color: #fff;
-    width:150%;     
+    width:150%;  
+    margin-top:5px;
 }
 
 /* Basic styling for navigation links */
@@ -42,7 +43,7 @@ body {
   
 
 .nav-item{
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .hero {
@@ -95,6 +96,7 @@ body {
     color: white;
     width: 20%;
     font-size: 1.2rem;
+   
     
 }
 
