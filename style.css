@@ -39,7 +39,14 @@ body {
   .nav-link:hover::after {
     width: 100%;
     right: 0;
+    color: #f98b02;
   }
+  .nav-link:hover{
+    color: #f98b02;
+  }
+  /* .nav-link:active{
+    color: #fb8b01;
+  } */
   
 
 .nav-item{
@@ -143,7 +150,7 @@ body {
 
 @media (max-width: 991px) {
     .navbar .nav-link {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0rem;
     }
 
     .navbar .btn {
@@ -188,6 +195,19 @@ body {
     .team-text p {
         font-size: 1rem;
     }
+}
+@media (max-width: 576px) {
+    .navbar-toggler {
+        position: absolute;
+        left: 21rem;
+        top: 10px;
+        width: 60px;
+    }
+    .dnt-btn{
+      width:20%;
+      margin-right:100% ;
+    }
+    
 }
 
 
@@ -385,4 +405,7 @@ body {
    
 }
 
+#quick a{
+    color: white;
+}
 
