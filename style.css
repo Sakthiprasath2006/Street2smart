@@ -8,6 +8,7 @@ body {
     color: #fff;
     width:150%;  
     margin-top:5px;
+    
 }
 
 /* Basic styling for navigation links */
@@ -15,10 +16,12 @@ body {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
+   
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    
 }
   
 /* Creating the underline effect */
@@ -45,12 +48,17 @@ body {
 .nav-link:hover{
     color: #f98b02;
 }
-/* .nav-link:active{
+/* .nav-link:active::after{
     color: #fb8b01;
 } */
 
 .nav-item{
-    padding-left: 30px;
+    padding-left: 40px;
+    margin-left: -4.5%;
+    margin-right: 3%;
+    padding-right: 10px;
+    
+    gap: 9rem;
 }
 
 .hero {
@@ -167,6 +175,9 @@ body {
     .team-text p {
         font-size: 1rem;
     }
+    .hero-overlay {
+        backdrop-filter: none; /* Remove backdrop-filter */
+    }
 }
 
 @media (max-width: 575px) {
@@ -176,6 +187,9 @@ body {
 
     .hero-txt p {
         font-size: 1rem;
+    }
+    .hero-overlay {
+        backdrop-filter: none; /* Remove backdrop-filter */
     }
 
     .service-item img {
@@ -204,6 +218,9 @@ body {
         width:20%;
         margin-right:100%;
     }
+}
+.hero-overlay {
+    backdrop-filter: none; /* Remove backdrop-filter */
 }
 
 .team-item {
@@ -294,6 +311,9 @@ body {
     .footer h1 {
         text-align: center;
     }
+    .hero-overlay {
+        backdrop-filter: none; /* Remove backdrop-filter */
+    }
 }
 
 @media(max-width:450px) {
@@ -310,6 +330,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        backdrop-filter: none; /* Remove backdrop-filter */
+      
     }
 
     .hero h1 {
@@ -320,6 +343,197 @@ body {
         font-size: 1rem;
     }
 }
+@media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+    .hero-overlay {
+        backdrop-filter: none; /* Remove backdrop-filter */
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .btn-volunteer,
+    .btn-donate {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  /* @media (max-width: 576px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .hero img {
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .hero-overlay {
+      padding: 10% 2%;
+    }
+  
+    #about-btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .display-6 {
+      font-size: 1.5rem;
+    }
+  
+    .service-item h4 {
+      font-size: 1.2rem;
+    }
+  
+    .service-item p {
+      font-size: 0.9rem;
+    }
+  
+    .team-text h5 {
+      font-size: 1rem;
+    }
+  
+    .team-text p {
+      font-size: 0.8rem;
+    }
+  
+    .footer p {
+      font-size: 0.9rem;
+    }
+  
+    .footer h5 {
+      font-size: 1.2rem;
+    }
+  } */
+  
+  @media (max-width: 320px) {
+    .navbar-brand {
+      font-size: 1rem;
+    }
+    .navbar-toggler {
+        position: absolute;
+        left: 15rem;
+        top: 10px;
+        width: 60px;
+    }
+  
+    .hero h1 {
+      font-size: 1.2rem;
+    }
+  
+    .hero p {
+      font-size: 0.8rem;
+    
+      
+    }
+    
+  
+    .btn-volunteer,
+    .btn-donate {
+      font-size: 0.8rem;
+    }
+  
+    .display-6 {
+      font-size: 1.2rem;
+    }
+  
+    .service-item h4 {
+      font-size: 1rem;
+    }
+  
+    .service-item p {
+      font-size: 0.8rem;
+    }
+  
+    .team-text h5 {
+      font-size: 0.8rem;
+    }
+  
+    .team-text p {
+      font-size: 0.6rem;
+    }
+  
+    .footer p {
+      font-size: 0.8rem;
+    }
+  
+    .footer h5 {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 1440px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .btn-volunteer,
+  .btn-donate {
+    font-size: 1rem;
+  }
+
+  #about-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .display-6 {
+    font-size: 1.8rem;
+  }
+
+  .service-item h4 {
+    font-size: 1.4rem;
+  }
+
+  .service-item p {
+    font-size: 1rem;
+  }
+
+  .team-text h5 {
+    font-size: 1.1rem;
+  }
+
+  .team-text p {
+    font-size: 0.9rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+
+  .footer h5 {
+    font-size: 1.3rem;
+  }
+}
+
+  
 
 /* CSS for slide-in animation */
 @keyframes slideIn {
