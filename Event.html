@@ -23,38 +23,35 @@
 
     .card {
       background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); */
       margin: 10px;
       padding: 15px;
       text-align: center;
       border-radius: 8px;
+      max-width: 2000px;
+      /* Adjust the maximum width to make the card smaller */
+      margin-left: 10%;
+      /* Center the card within the column */
     }
 
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
 
     .card h3 {
       margin-top: 10px;
       font-size: 1.2rem;
-     font-weight: bold;
+      font-weight: bold;
     }
 
-    .card p {
-      color: #555;
-      line-height: 1.6;
-    }
+
 
     h1 {
-      color: #fb8b01;
+      color: #fbb801;
       text-align: center;
       font-weight: bolder;
     }
 
     .btn-see-more {
       margin-top: 10px;
-      background-color: #0b704e;
+      background-color: #fbb801;
       color: white;
     }
 
@@ -63,19 +60,61 @@
         margin-left: auto;
       }
     }
-    @media (max-width: 320px){
 
+    .card-img-top {
+      width: 100%;
+      height: 150px;
+      /* Adjust the image height as needed */
+      object-fit: cover;
+      /* Maintain aspect ratio and cover the entire area */
     }
 
+    .card-body {
+      padding: 10px;
+      /* Adjust the padding as needed */
+    }
+
+    .card-title {
+      font-size: 1rem;
+      /* Adjust the title font size as needed */
+    }
+
+    .btn-see-more {
+      font-size: 0.875rem;
+      /* Adjust the button font size as needed */
+      padding: 5px 10px;
+      /* Adjust the button padding as needed */
+    }
+
+    .mb-4 {
+      margin-bottom: 1.5rem;
+      /* Add space between the cards */
+    }
+
+    @media (max-width: 768px) {
+
+      .col-lg-3,
+      .col-md-4,
+      .col-sm-6 {
+        max-width: 100%;
+        /* Ensure the cards take full width on small screens */
+      }
+    }
+
+    #quick a {
+      color: white;
+    }
   </style>
 </head>
 
 <body>
   <h1>Events</h1>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0b704e;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+    style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -96,7 +135,7 @@
             <a class="nav-link" href="contact_us.html">Contact us</a>
           </li>
           <li class="nav-item">
-            <button class="btn" id="dnt-btn" type="button">Donate</button>
+            <a href="donate.html"><button class="btn" id="dnt-btn" type="button" >Donate</button></a>
           </li>
         </ul>
 
@@ -107,44 +146,44 @@
   <div class="container mt-1 pt-5">
     <div class="row justify-content-center">
       <!-- <h2>Events</h2> -->
-      <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
         <div class="card animate__animated animate__fadeIn">
-          <img src="./images/about-2.jpg" alt="Event 1">
-          <h3>Bag Distribution Event</h3>
-          <p>We distributed school bags filled with supplies to children in need, aiming to empower their education.</p>
-          <a href="event1.html" class="btn btn-see-more">See More</a>
+          <img src="./images/about-2.jpg" alt="Event 1" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bag Distribution Event</h5>
+            <p>Providing essentials and hope to the homeless with our Bag Distribution Event.</p>
+            <a href="event1.html" class="btn btn-see-more">See More</a>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
         <div class="card animate__animated animate__fadeIn">
-          <img src="./images/about-2.jpg" alt="Event 2">
-          <h3>Bag Distribution Event</h3>
-          <p>We distributed school bags filled with supplies to children in need, aiming to empower their education.</p>
-          <a href="event1.html" class="btn btn-see-more">See More</a>
+          <img src="./images/about-2.jpg" alt="Event 2" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bag Distribution Event</h5>
+            <p>Providing essentials and hope to the homeless with our Bag Distribution Event.</p>
+            <a href="event1.html" class="btn btn-see-more">See More</a>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
         <div class="card animate__animated animate__fadeIn">
-          <img src="./images/about-2.jpg" alt="Event 3">
-          <h3>Bag Distribution Event</h3>
-          <p>We distributed school bags filled with supplies to children in need, aiming to empower their education.</p>
-          <a href="event1.html" class="btn btn-see-more">See More</a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card animate__animated animate__fadeIn">
-          <img src="./images/about-2.jpg" alt="Event 4">
-          <h3>Bag Distribution Event</h3>
-          <p>We distributed school bags filled with supplies to children in need, aiming to empower their education.</p>
-          <a href="event1.html" class="btn btn-see-more">See More</a>
+          <img src="./images/about-2.jpg" alt="Event 3" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Bag Distribution Event</h5>
+            <p>Providing essentials and hope to the homeless with our Bag Distribution Event.</p>
+            <a href="event1.html" class="btn btn-see-more">See More</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
 
-  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
-    style="text-align: center;">
+
+
+  <!--footer-->
+  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer "
+    style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
     <div class="container py-5">
       <div class="row g-5">
         <div class="col-lg-4 col-md-6">
@@ -152,32 +191,45 @@
           <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
             mission is to uplift individuals and communities through a range of initiatives aimed at addressing
             fundamental needs and fostering sustainable development.</p>
-          <div class="d-flex justify-content-center">
-            <a class="btn btn-square me-1" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square me-1" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square me-1" href="#"><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+
+          <div class="row">
+            <div class="col-3"></div>
+            <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
           </div>
+          <br>
+
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-4">Address</h5>
+        <div class="col-lg-4 col-md-6" id="add">
+          <h5 class=" mb-4">Address</h5>
           <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-          <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-          <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          <p><i class="fa fa-phone-alt me-3"></i>+1 (503) 360-8134</p>
+          <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org </p><br><br>
+
+
         </div>
-        <div class="col-lg-4 col-md-6" style="color: white;">
-          <h5 class="text-light mb-3">Quick Links</h5>
-          <a class="btn btn-link" href="index.html#about">About</a><br>
+        <div class="col-lg-4 col-md-6" id="quick">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <a class="btn btn-link" href="#about">About</a><br>
           <a class="btn btn-link" href="contact_us.html">Contact Us</a><br>
           <a class="btn btn-link" href="Event.html">Events</a><br>
           <a class="btn btn-link" href="volunteer.html">Volunteer</a>
         </div>
+
+
       </div>
     </div>
-    &copy; <a href="index.html" style="color: white;">Street2Smart</a>, All Right Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color: white;"> Arjava Tech</a>
-    <br>
-    <br>
+    <footer style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;">
+      &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right
+      Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color:black;background-color: white;"> Arjava
+        Tech</a>
+      <br>
+      <br>
+    </footer>
   </div>
+  <!-- footer -->
 </body>
 
 </html>

@@ -13,9 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
+<title>Events</title>
+<style>
+    #quick a {
+        color: white;
+    }
+</style>
 
 <body style="font-family: Quicksand, sans-serif;">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0b704e;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+        style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -40,14 +47,14 @@
                         <a class="nav-link" href="contact_us.html">Contact us</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn" id="dnt-btn" type="button">Donate</button>
+                        <a href="donate.html"><button class="btn" id="dnt-btn" type="button" >Donate</button></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <h1 style="margin-top:6%;font-weight: bold;text-align: center;font-size: 2.5rem;color: #fb8b01;">
+    <h1 style="margin-top:6%;font-weight: bold;text-align: center;font-size: 2.5rem;color: #fbb801;">
         Bag Distribution Event
     </h1>
 
@@ -88,53 +95,85 @@
     <div class="container mt-5">
         <h2>About the Bag Distribution Event</h2>
         <p style="font-size: 18px; text-align: justify;">
-            The Bag Distribution Event is one of our key initiatives aimed at supporting individuals and families experiencing homelessness and poverty. This event is more than just handing out bags; it's about providing essential resources and a sense of hope to those who need it the most. Each bag is carefully packed with necessities such as toiletries, non-perishable food items, water bottles, blankets, and other essentials that can make a significant difference in daily survival and comfort.
+            The Bag Distribution Event is one of our key initiatives aimed at supporting individuals and families
+            experiencing homelessness and poverty. This event is more than just handing out bags; it's about providing
+            essential resources and a sense of hope to those who need it the most. Each bag is carefully packed with
+            necessities such as toiletries, non-perishable food items, water bottles, blankets, and other essentials
+            that can make a significant difference in daily survival and comfort.
         </p>
         <p style="font-size: 18px; text-align: justify;">
-            Our volunteers work tirelessly to ensure that every bag is filled with items that are not only practical but also offer a touch of compassion and care. The Bag Distribution Event is a community effort, bringing together individuals from all walks of life to support our mission. Volunteers gather to assemble the bags, and then distribute them at various locations across the city, including shelters, parks, and areas known for higher homelessness rates.
+            Our volunteers work tirelessly to ensure that every bag is filled with items that are not only practical but
+            also offer a touch of compassion and care. The Bag Distribution Event is a community effort, bringing
+            together individuals from all walks of life to support our mission. Volunteers gather to assemble the bags,
+            and then distribute them at various locations across the city, including shelters, parks, and areas known
+            for higher homelessness rates.
         </p>
         <p style="font-size: 18px; text-align: justify;">
-            The impact of this event is profound. For many recipients, receiving a bag can be a lifeline, offering immediate relief and a reminder that they are not forgotten. The event also serves as an opportunity for volunteers to engage directly with the community, fostering understanding and solidarity. Through this event, we aim to not only address immediate needs but also to build connections that can lead to long-term support and empowerment.
+            The impact of this event is profound. For many recipients, receiving a bag can be a lifeline, offering
+            immediate relief and a reminder that they are not forgotten. The event also serves as an opportunity for
+            volunteers to engage directly with the community, fostering understanding and solidarity. Through this
+            event, we aim to not only address immediate needs but also to build connections that can lead to long-term
+            support and empowerment.
         </p>
         <p style="font-size: 18px; text-align: justify;">
-            We are always looking for more volunteers and donations to help expand the reach and impact of our Bag Distribution Event. If you are interested in contributing, please reach out to us or consider making a donation. Together, we can make a meaningful difference in the lives of those who are struggling and work towards building a more compassionate and supportive community.
+            We are always looking for more volunteers and donations to help expand the reach and impact of our Bag
+            Distribution Event. If you are interested in contributing, please reach out to us or consider making a
+            donation. Together, we can make a meaningful difference in the lives of those who are struggling and work
+            towards building a more compassionate and supportive community.
         </p>
     </div>
-    <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
-    style="text-align: center;">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-4 col-md-6">
-          <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
-          <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
-            mission is to uplift individuals and communities through a range of initiatives aimed at addressing
-            fundamental needs and fostering sustainable development.</p>
-          <div class="d-flex justify-content-center">
-            <a class="btn btn-square me-1" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square me-1" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square me-1" href="#"><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+    <!--footer-->
+    <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer "
+        style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
+                    <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need.
+                        Our
+                        mission is to uplift individuals and communities through a range of initiatives aimed at
+                        addressing
+                        fundamental needs and fostering sustainable development.</p>
+
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="col-lg-4 col-md-6" id="add">
+                    <h5 class=" mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+1 (503) 360-8134</p>
+                    <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org </p><br><br>
+
+
+                </div>
+                <div class="col-lg-4 col-md-6" id="quick">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <a class="btn btn-link" href="#about">About</a><br>
+                    <a class="btn btn-link" href="contact_us.html">Contact Us</a><br>
+                    <a class="btn btn-link" href="Event.html">Events</a><br>
+                    <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+                </div>
+
+
+            </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-4">Address</h5>
-          <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-          <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-          <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-light mb-3">Quick Links</h5>
-          <a class="btn btn-link" href="index.html#about">About</a><br>
-          <a class="btn btn-link" href="contact_us.html">Contact Us</a><br>
-          <a class="btn btn-link" href="Event.html">Events</a><br>
-          <a class="btn btn-link" href="volunteer.html">Volunteer</a>
-        </div>
-      </div>
+        <footer
+            style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;">
+            &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right
+            Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color:black;background-color: white;">
+                Arjava Tech</a>
+            <br>
+            <br>
+        </footer>
     </div>
-    &copy; <a href="index.html" style="color: white;">Street2Smart</a>, All Right Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color: white;"> Arjava Tech</a>
-    <br>
-    <br>
-  </div>
+    <!-- footer -->
 </body>
 
 </html>

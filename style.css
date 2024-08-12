@@ -4,11 +4,12 @@ body {
 }
 
 #dnt-btn {
-    background-color: #fb8b01;
+    background-color: #fbb801;
     color: #fff;
-    width:150%;  
-    margin-top:5px;
-    
+    width: 150%;
+    margin-top: 5px;
+    font-weight: bold;
+
 }
 
 /* Basic styling for navigation links */
@@ -16,14 +17,14 @@ body {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-   
-    color: white;
+
+    color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    
+
 }
-  
+
 /* Creating the underline effect */
 .nav-link::after {
     content: '';
@@ -37,35 +38,43 @@ body {
     transition: width 0.9s ease, right 0.4s ease;
     color: white;
 }
+.navbar-nav{
+    display: flexbox;
+    margin-left: auto;
+   
+}
 
 /* Animation on hover */
 .nav-link:hover::after {
     width: 100%;
     left: 0;
-    color: #f98b02;
+    color: #fbb801;
 }
 
-.nav-link:hover{
-    color: #f98b02;
+.nav-link:hover {
+    color: #fbb801;
 }
+
 /* .nav-link:active::after{
     color: #fb8b01;
 } */
 
-.nav-item{
+.nav-item {
     padding-left: 40px;
     margin-left: -4.5%;
     margin-right: 3%;
-    padding-right: 10px;
+    padding-right: 1px;
+    display: flexbox;
+    gap: 10rem;
     
-    gap: 9rem;
 }
 
 .hero {
     position: relative;
     text-align: center;
 }
-.hero h1{
+
+.hero h1 {
     font-weight: bolder;
 }
 
@@ -93,26 +102,26 @@ body {
 }
 
 .btn-volunteer {
-    background-color: #0b704e;
-    color: white;
+    background-color: white;
+    color: black;
     width: 20%;
     font-size: 1.2rem;
 }
 
 .btn-volunteer:hover {
-    background-color: #0b704e;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .btn-donate {
-    background-color: #fb8b01;
+    background-color: #fbb801;
     color: white;
     width: 20%;
     font-size: 1.2rem;
 }
 
 .btn-donate:hover {
-    background-color: #fb8b01;
+    background-color: #fbb801;
     color: white;
 }
 
@@ -143,12 +152,12 @@ body {
 }
 
 #about-btn {
-    background-color: #fb8b01;
+    background-color: #fbb801;
     color: white;
 }
 
 #border {
-    border-bottom: 1px solid #fb8b01;
+    border-bottom: 1px solid#fbb801;
 }
 
 @media (max-width: 991px) {
@@ -156,7 +165,7 @@ body {
         padding: 0.5rem 0rem;
     }
 
-    .navbar .btn {
+    .navbar{
         margin-top: 0.5rem;
     }
 
@@ -175,8 +184,10 @@ body {
     .team-text p {
         font-size: 1rem;
     }
+
     .hero-overlay {
-        backdrop-filter: none; /* Remove backdrop-filter */
+        backdrop-filter: none;
+        /* Remove backdrop-filter */
     }
 }
 
@@ -188,8 +199,10 @@ body {
     .hero-txt p {
         font-size: 1rem;
     }
+
     .hero-overlay {
-        backdrop-filter: none; /* Remove backdrop-filter */
+        backdrop-filter: none;
+        /* Remove backdrop-filter */
     }
 
     .service-item img {
@@ -208,19 +221,20 @@ body {
 
 @media (max-width: 576px) {
     .navbar-toggler {
-        position: absolute;
-        left: 21rem;
+        /* position: absolute;
+        left: 21rem; */
         top: 10px;
         width: 60px;
     }
 
-    .dnt-btn{
-        width:20%;
-        margin-right:100%;
+    .dnt-btn {
+        width: 10% !important;
     }
 }
+
 .hero-overlay {
-    backdrop-filter: none; /* Remove backdrop-filter */
+    backdrop-filter: none;
+    /* Remove backdrop-filter */
 }
 
 .team-item {
@@ -235,7 +249,7 @@ body {
 }
 
 .team-item img {
-    border-bottom: 3px solid #fb8b01;
+    border-bottom: 3px solid #fbb801;
 }
 
 .team-text {
@@ -250,7 +264,7 @@ body {
 
 .team-text p {
     font-size: 1rem;
-    color: #fb8b01;
+    color: #fbb801;
 }
 
 .team-social {
@@ -259,18 +273,21 @@ body {
 
 .team-social .btn {
     color: #fff;
-    background-color: #fb8b01;
+    background-color: #fbb801;
     margin: 0 5px;
 }
 
 .footer {
-    background-color: #0b704e;
-    color: white;
+    background-color: white;
+    color: black;
+    width: 100%;
+  
 }
 
 .footer h1 {
     font-size: 2rem;
 }
+
 
 .footer p {
     font-size: 1rem;
@@ -281,7 +298,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #fb8b01;
+    background-color: #fbb801;
     color: white;
     display: flex;
     align-items: center;
@@ -290,8 +307,10 @@ body {
 }
 
 .footer .btn-square:hover {
-    background-color: #f98b02;
+    background-color: #fbb801;
 }
+
+
 
 @media (max-width: 767px) {
     .footer .d-flex {
@@ -311,15 +330,17 @@ body {
     .footer h1 {
         text-align: center;
     }
+
     .hero-overlay {
-        backdrop-filter: none; /* Remove backdrop-filter */
+        backdrop-filter: none;
+        /* Remove backdrop-filter */
     }
 }
 
 @media(max-width:450px) {
     #para {
         margin-top: 35%;
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur( );
     }
 
     .hero-overlay {
@@ -330,9 +351,10 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        backdrop-filter: none; /* Remove backdrop-filter */
-      
+
+        backdrop-filter: none;
+        /* Remove backdrop-filter */
+
     }
 
     .hero h1 {
@@ -343,30 +365,52 @@ body {
         font-size: 1rem;
     }
 }
+
 @media (max-width: 768px) {
     .hero h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .hero p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
+
     .hero-overlay {
-        backdrop-filter: none; /* Remove backdrop-filter */
+        backdrop-filter: none;
+        /* Remove backdrop-filter */
     }
-  
+    #para{
+        backdrop-filter: none;
+    }
+
     .buttons {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+    #about{
+        margin-top: 9%;
+    }
+   
+
     .btn-volunteer,
     .btn-donate {
-      width: 100%;
-      margin: 5px 0;
+        width: 150px;
+        margin: 5px 0;
     }
-  }
-  
-  /* @media (max-width: 576px) {
+    
+    #footer{
+        width:100%;
+        padding-left: -20%;
+    }
+    body{
+        margin-top: 10%;
+    }
+    #navbarNavDropdown .nav-item .btn{
+        width:6rem;
+     
+    }
+}
+
+/* @media (max-width: 576px) {
     .hero h1 {
       font-size: 1.5rem;
     }
@@ -421,119 +465,153 @@ body {
       font-size: 1.2rem;
     }
   } */
-  
-  @media (max-width: 320px) {
-    .navbar-brand {
-      font-size: 1rem;
+
+@media (max-width: 320px) {
+    body{
+      align-content: center;
+      margin-right: -4%;
+      padding-right: 2x;
+
+       
     }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
     .navbar-toggler {
-        position: absolute;
-        left: 15rem;
         top: 10px;
         width: 60px;
     }
-  
+
     .hero h1 {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  
+
     .hero p {
-      font-size: 0.8rem;
-    
-      
+        font-size: 0.8rem;
+     
     }
-    
-  
+    #para{
+        backdrop-filter: none;
+        margin-top: -6%;
+    }
+   
+    .hero-img{
+      content: url(images/MOBILE_IMAGE.png);
+      /* margin-bottom: 90%; */
+          
+    }
+    .hero-overlay{
+        margin: 0%;
+    }
+   
+
     .btn-volunteer,
     .btn-donate {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
+        width: 200px;
     }
-  
+
     .display-6 {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  
+
     .service-item h4 {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .service-item p {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  
+
     .team-text h5 {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  
+
     .team-text p {
-      font-size: 0.6rem;
+        font-size: 0.6rem;
     }
-  
+
     .footer p {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  
+
     .footer h5 {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .btn {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
+        
     }
-  }
-  @media (max-width: 1440px) {
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  .btn-volunteer,
-  .btn-donate {
-    font-size: 1rem;
-  }
-
-  #about-btn {
-    font-size: 1.1rem;
-    padding: 0.5rem 1.2rem;
-  }
-
-  .display-6 {
-    font-size: 1.8rem;
-  }
-
-  .service-item h4 {
-    font-size: 1.4rem;
-  }
-
-  .service-item p {
-    font-size: 1rem;
-  }
-
-  .team-text h5 {
-    font-size: 1.1rem;
-  }
-
-  .team-text p {
-    font-size: 0.9rem;
-  }
-
-  .footer p {
-    font-size: 1rem;
-  }
-
-  .footer h5 {
-    font-size: 1.3rem;
-  }
+    /* .nav-item{
+        align-items:left;
+    } */
+    /* .dnt-btn{
+        width: 3px;
+        margin-right: -3%;
+    } */
+    #navbarNavDropdown .nav-item .btn{
+        width:6rem;
+     
+    }
+   
 }
 
-  
+@media (max-width: 1440px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn-volunteer,
+    .btn-donate {
+        font-size: 1rem;
+    }
+
+    #about-btn {
+        font-size: 1.1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .display-6 {
+        font-size: 1.8rem;
+    }
+
+    .service-item h4 {
+        font-size: 1.4rem;
+    }
+
+    .service-item p {
+        font-size: 1rem;
+    }
+
+    .team-text h5 {
+        font-size: 1.1rem;
+    }
+
+    .team-text p {
+        font-size: 0.9rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+
+    .footer h5 {
+        font-size: 1.3rem;
+    }
+}
+
+
 
 /* CSS for slide-in animation */
 @keyframes slideIn {
@@ -541,6 +619,7 @@ body {
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -588,7 +667,7 @@ body {
 }
 
 .btn-see-more {
-    background-color: #fb8b01;
+    background-color: #fbb801;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -597,41 +676,20 @@ body {
 }
 
 .btn-see-more:hover {
-    background-color: #f98b02;
+    background-color: #fbb801;
     color: white;
     text-decoration: none;
 }
 
-#volunteer h4{
+#volunteer h4 {
     padding-left: 5%;
     margin-left: 5%;
 }
 
-#navbarNavDropdown {
-    margin-left: 40%;
-}
 
-@media (max-width:1310px) {
-    #navbarNavDropdown {
-        padding-left: 20%;
-        margin-left: 0;
-    }
 
-    .nav-item {
-        padding-left: 20px;
-    }
-}
 
-@media(max-width:1450px) {
-    #navbarNavDropdown {
-        padding-left: 40%;
-        margin-left: 0px;
-    }
 
-    .nav-item {
-        padding-left: 18px;
-    }
-}
 
 @media(max-width:400px) {
     .hero h1 {
@@ -648,9 +706,7 @@ body {
     }
 }
 
-#quick a {
-    color: white;
-}
+
 
 #short {
     margin-left: 3%;
