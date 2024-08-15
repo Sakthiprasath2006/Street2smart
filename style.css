@@ -25,6 +25,7 @@ body {
 
 }
 
+
 /* Creating the underline effect */
 .nav-link::after {
     content: '';
@@ -38,10 +39,11 @@ body {
     transition: width 0.9s ease, right 0.4s ease;
     color: white;
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flexbox;
     margin-left: auto;
-   
+
 }
 
 /* Animation on hover */
@@ -66,7 +68,7 @@ body {
     padding-right: 1px;
     display: flexbox;
     gap: 10rem;
-    
+
 }
 
 .hero {
@@ -165,8 +167,8 @@ body {
         padding: 0.5rem 0rem;
     }
 
-    .navbar{
-        margin-top: 0.5rem;
+    .navbar {
+        /* margin-top: 0.5rem; */
     }
 
     .hero-txt h1 {
@@ -230,6 +232,14 @@ body {
     .dnt-btn {
         width: 10% !important;
     }
+
+    .copyRights {
+        font-size: 12px;
+    }
+
+    * {
+        overflow-x: hidden;
+    }
 }
 
 .hero-overlay {
@@ -281,7 +291,7 @@ body {
     background-color: white;
     color: black;
     width: 100%;
-  
+
 }
 
 .footer h1 {
@@ -310,6 +320,14 @@ body {
     background-color: #fbb801;
 }
 
+.copyRights {
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding-top: 14px;
+    background-size: cover;
+    font-size: smaller;
+}
 
 
 @media (max-width: 767px) {
@@ -339,8 +357,9 @@ body {
 
 @media(max-width:450px) {
     #para {
-        margin-top: 35%;
-        backdrop-filter: blur( );
+        margin-top: 0;
+        /* margin-top: 35%; */
+        backdrop-filter: none;
     }
 
     .hero-overlay {
@@ -351,62 +370,148 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        backdrop-filter: none;
+        background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center;
+        background-size: cover;
+        /* backdrop-filter: none; */
         /* Remove backdrop-filter */
 
     }
+    .hero{
+        margin-top: 20%;
+    }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 14px !important;
+        margin-bottom: -20px;
     }
 
     .hero p {
+        /* font-size: 1rem; */
+        font-size: 10px !important;
+        padding-top: 8%;
+    }
+    .btn-volunteer:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .btn-donate {
+        background-color: #fbb801;
+        color: white;
+        font-size: 10px !important;
+        width: 30% !important;
+        margin-top: 5px !important;
+    }
+    
+    .btn-donate:hover {
+        background-color: #fbb801;
+        color: white;
+    }
+    .btn-volunteer {
+        background-color: white;
+        color: black;
+        font-size: 10px !important;
+        width: 30% !important;
+        margin: 0 !important;
+
+    }
+    #about h1{
+        font-size: 1.1rem;
+    }
+    #about p{
+        font-size: smaller;
+    }
+    #our-mission h1{
+        font-size: 1.1rem;
+    }
+    #our-mission h4{
         font-size: 1rem;
+    }
+    #our-mission p{
+        font-size: smaller;
+    }
+    #footer p{
+        font-size:2px;
+    }
+    #about-btn{
+        font-size: 0.05rem;
+      
     }
 }
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 0.05rem;
     }
 
     .hero p {
         font-size: 1rem;
+
+    }
+
+    .hero {
+        background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center;
+        background-size: cover;
+       
     }
 
     .hero-overlay {
         backdrop-filter: none;
         /* Remove backdrop-filter */
     }
-    #para{
+
+    #para {
+        margin-top: 0%;
         backdrop-filter: none;
+        /* Uncomment the following line if you want to use a background color instead of the image */
+        /* background-color: #fbb801; */
+        /* background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center; */
+        /* background-size: cover; Ensures the image covers the entire area */
     }
+
 
     .buttons {
         flex-direction: column;
     }
-    #about{
+
+    #about {
         margin-top: 9%;
     }
-   
+
 
     .btn-volunteer,
     .btn-donate {
         width: 150px;
         margin: 5px 0;
     }
-    
-    #footer{
-        width:100%;
+
+    #footer {
+        width: 100%;
         padding-left: -20%;
     }
-    body{
+
+    /* body {
         margin-top: 10%;
+    } */
+
+    #navbarNavDropdown .nav-item .btn {
+        width: 6rem;
+
     }
-    #navbarNavDropdown .nav-item .btn{
-        width:6rem;
-     
+    #about h1{
+        font-size: 1.7rem;
+    }
+    #about p{
+        font-size: smaller;
+    }
+    #our-mission h1{
+        font-size: 1.7rem;
+    }
+    #our-mission h4{
+        font-size: 1.1rem;
+    }
+    #our-mission p{
+        font-size: smaller;
     }
 }
 
@@ -467,13 +572,8 @@ body {
   } */
 
 @media (max-width: 320px) {
-    body{
-      align-content: center;
-      margin-right: -4%;
-      padding-right: 2x;
 
-       
-    }
+
 
     .navbar-brand {
         font-size: 1rem;
@@ -490,22 +590,16 @@ body {
 
     .hero p {
         font-size: 0.8rem;
-     
+
     }
-    #para{
-        backdrop-filter: none;
-        margin-top: -6%;
+
+    #para {
+        margin-top: 0%;
+        /* backdrop-filter: blur(7px); */
+
     }
-   
-    .hero-img{
-      content: url(images/MOBILE_IMAGE.png);
-      /* margin-bottom: 90%; */
-          
-    }
-    .hero-overlay{
-        margin: 0%;
-    }
-   
+
+
 
     .btn-volunteer,
     .btn-donate {
@@ -543,8 +637,9 @@ body {
 
     .btn {
         font-size: 0.8rem;
-        
+
     }
+
     /* .nav-item{
         align-items:left;
     } */
@@ -552,11 +647,11 @@ body {
         width: 3px;
         margin-right: -3%;
     } */
-    #navbarNavDropdown .nav-item .btn{
-        width:6rem;
-     
+    #navbarNavDropdown .nav-item .btn {
+        width: 6rem;
+
     }
-   
+
 }
 
 @media (max-width: 1440px) {
@@ -699,12 +794,15 @@ body {
 
     .hero img {
         width: 100%;
-        margin-top: 500px;
+        /* margin-top: 500px; */
         height: auto;
         backdrop-filter: none;
         display: block;
     }
+
 }
+
+
 
 
 
