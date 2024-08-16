@@ -3,73 +3,8 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
-#dnt-btn {
-    background-color: #fbb801;
-    color: #fff;
-    width: 150%;
-    margin-top: 5px;
-    font-weight: bold;
-
-}
-
-/* Basic styling for navigation links */
-.nav-link {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-
-}
 
 
-/* Creating the underline effect */
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    left: 0;
-    background: #000;
-    transition: width 0.9s ease, right 0.4s ease;
-    color: white;
-}
-
-.navbar-nav {
-    display: flexbox;
-    margin-left: auto;
-
-}
-
-/* Animation on hover */
-.nav-link:hover::after {
-    width: 100%;
-    left: 0;
-    color: #fbb801;
-}
-
-.nav-link:hover {
-    color: #fbb801;
-}
-
-/* .nav-link:active::after{
-    color: #fb8b01;
-} */
-
-.nav-item {
-    padding-left: 40px;
-    margin-left: -4.5%;
-    margin-right: 3%;
-    padding-right: 1px;
-    display: flexbox;
-    gap: 10rem;
-
-}
 
 .hero {
     position: relative;
@@ -163,13 +98,7 @@ body {
 }
 
 @media (max-width: 991px) {
-    .navbar .nav-link {
-        padding: 0.5rem 0rem;
-    }
-
-    .navbar {
-        /* margin-top: 0.5rem; */
-    }
+  
 
     .hero-txt h1 {
         font-size: 2rem;
@@ -222,12 +151,7 @@ body {
 }
 
 @media (max-width: 576px) {
-    .navbar-toggler {
-        /* position: absolute;
-        left: 21rem; */
-        top: 10px;
-        width: 60px;
-    }
+
 
     .dnt-btn {
         width: 10% !important;
@@ -302,6 +226,11 @@ body {
 .footer p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: white;
+}
+
+.btn-link {
+    text-decoration: none;
 }
 
 .footer .btn-square {
@@ -329,6 +258,10 @@ body {
     font-size: smaller;
 }
 
+#footer {
+    background: url("images/footer.png") no-repeat center center;
+    background-size: cover;
+}
 
 @media (max-width: 767px) {
     .footer .d-flex {
@@ -376,7 +309,8 @@ body {
         /* Remove backdrop-filter */
 
     }
-    .hero{
+
+    .hero {
         margin-top: 20%;
     }
 
@@ -390,11 +324,12 @@ body {
         font-size: 10px !important;
         padding-top: 8%;
     }
+
     .btn-volunteer:hover {
         background-color: white;
         color: black;
     }
-    
+
     .btn-donate {
         background-color: #fbb801;
         color: white;
@@ -402,11 +337,12 @@ body {
         width: 30% !important;
         margin-top: 5px !important;
     }
-    
+
     .btn-donate:hover {
         background-color: #fbb801;
         color: white;
     }
+
     .btn-volunteer {
         background-color: white;
         color: black;
@@ -415,28 +351,47 @@ body {
         margin: 0 !important;
 
     }
-    #about h1{
+
+    #about h1 {
         font-size: 1.1rem;
     }
-    #about p{
+
+    #about p {
         font-size: smaller;
     }
-    #our-mission h1{
+
+    #our-mission h1 {
         font-size: 1.1rem;
     }
-    #our-mission h4{
+
+    #our-mission h4 {
         font-size: 1rem;
     }
-    #our-mission p{
+
+    #our-mission p {
         font-size: smaller;
     }
-    #footer p{
-        font-size:2px;
+
+    #footer p {
+        font-size: 15px;
     }
-    #about-btn{
+
+    #about-btn {
         font-size: 0.05rem;
-      
+
     }
+
+    #footer {
+        text-align: center !important;
+        background: url("./images/footer.png") !important;
+        background-size: cover !important;
+        color: white !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        width: 100% !important;
+        /* height: 100vh !important; */
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -449,10 +404,14 @@ body {
 
     }
 
+    body {
+        margin-top: 4%;
+    }
+
     .hero {
         background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center;
         background-size: cover;
-       
+
     }
 
     .hero-overlay {
@@ -494,94 +453,31 @@ body {
         margin-top: 10%;
     } */
 
-    #navbarNavDropdown .nav-item .btn {
-        width: 6rem;
-
-    }
-    #about h1{
+    #about h1 {
         font-size: 1.7rem;
     }
-    #about p{
+
+    #about p {
         font-size: smaller;
     }
-    #our-mission h1{
+
+    #our-mission h1 {
         font-size: 1.7rem;
     }
-    #our-mission h4{
+
+    #our-mission h4 {
         font-size: 1.1rem;
     }
-    #our-mission p{
+
+    #our-mission p {
         font-size: smaller;
     }
+
 }
 
-/* @media (max-width: 576px) {
-    .hero h1 {
-      font-size: 1.5rem;
-    }
-  
-    .hero p {
-      font-size: 0.9rem;
-    }
-  
-    .navbar-brand {
-      font-size: 1.2rem;
-    }
-  
-    .hero img {
-      height: 200px;
-      object-fit: cover;
-    }
-  
-    .hero-overlay {
-      padding: 10% 2%;
-    }
-  
-    #about-btn {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    .display-6 {
-      font-size: 1.5rem;
-    }
-  
-    .service-item h4 {
-      font-size: 1.2rem;
-    }
-  
-    .service-item p {
-      font-size: 0.9rem;
-    }
-  
-    .team-text h5 {
-      font-size: 1rem;
-    }
-  
-    .team-text p {
-      font-size: 0.8rem;
-    }
-  
-    .footer p {
-      font-size: 0.9rem;
-    }
-  
-    .footer h5 {
-      font-size: 1.2rem;
-    }
-  } */
-
 @media (max-width: 320px) {
-
-
-
-    .navbar-brand {
-        font-size: 1rem;
-    }
-
-    .navbar-toggler {
-        top: 10px;
-        width: 60px;
+    .hero {
+        margin-top: 15%;
     }
 
     .hero h1 {
@@ -640,24 +536,12 @@ body {
 
     }
 
-    /* .nav-item{
-        align-items:left;
-    } */
-    /* .dnt-btn{
-        width: 3px;
-        margin-right: -3%;
-    } */
-    #navbarNavDropdown .nav-item .btn {
-        width: 6rem;
-
-    }
+ 
 
 }
 
 @media (max-width: 1440px) {
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
+
 
     .hero h1 {
         font-size: 2.2rem;

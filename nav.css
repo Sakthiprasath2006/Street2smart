@@ -1,0 +1,52 @@
+#dnt-btn {
+    background-color: #fbb801;
+    color: #fff;
+    font-size: 18px;
+    /* width: 150%; */
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #fbb801;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    color: #fbb801;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: #000;
+    transition: width 0.9s ease, right 0.4s ease;
+    color: white;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    background: #000;
+    /* Black underline color when active */
+}
+
+.nav-link.active {
+    color: #fbb801;
+    /* Text color when active */
+}
