@@ -43,10 +43,12 @@
 .nav-link.active::after {
     width: 100%;
     background: #000;
-    /* Black underline color when active */
 }
 
 .nav-link.active {
     color: #fbb801;
-    /* Text color when active */
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
 }

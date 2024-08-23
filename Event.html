@@ -23,15 +23,23 @@
 
     .card {
       background-color: #fff;
-      /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); */
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
       margin: 10px;
       padding: 15px;
       text-align: center;
       border-radius: 8px;
-      max-width: 2000px;
+      width: 90%;
+      /* max-width: 2000px; */
       /* Adjust the maximum width to make the card smaller */
-      margin-left: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
       /* Center the card within the column */
+    }
+
+    .card img {
+      width: 100%;
+      padding: 0px;
+      justify-content: center;
     }
 
 
@@ -109,26 +117,26 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-        style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="justify-content: end;">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html" target="_blank" id="nav">Home</a>
-                    <a class="nav-link" href="index.html#about">About</a>
-                    <a class="nav-link active" href="Event.html" style="color: #fab801;">Events</a>
-                    <a class="nav-link" href="volunteer.html">Volunteers</a>
-                    <a class="nav-link" href="contact_us.html">Contact us</a>
-                    <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
-                </div>
-            </div>
+    style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="justify-content: end;">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html" target="_blank" id="nav">Home</a>
+          <a class="nav-link" href="index.html#about">About</a>
+          <a class="nav-link active" href="Event.html" style="color: #fab801;">Events</a>
+          <a class="nav-link" href="volunteer.html">Volunteers</a>
+          <a class="nav-link" href="contact_us.html">Contact us</a>
+          <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
         </div>
-    </nav>
-  <div class="container mt-1 pt-5">
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid mt-1 pt-5">
     <div class="row justify-content-center">
       <h1>Events</h1>
       <div class="col-lg-4 col-md-4 col-sm-6 mb-4">

@@ -34,7 +34,7 @@
         box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
         max-width: 850px;
         margin: 50px auto;
-        position: relative
+        position: relative;
     }
 
     form {
@@ -58,8 +58,7 @@
     }
 
     input[type="submit"] {
-        background-color:
-            #f00;
+        background-color: #f00;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -104,16 +103,47 @@
         #contact-img {
             width: auto;
         }
+
+        .field-container #cu-form {
+            width: 500px;
+        }
+
+        .field-container #contact-form input[type="text"] {
+            width: 270px;
+        }
+
+        .field-container #contact-form input[type="email"] {
+            width: 270px;
+        }
+
+        .field-container #contact-form #message {
+            width: 270px;
+        }
+
+        #submit-btn {
+            width: 270px !important;
+            margin-top: 3%;
+        }
+
+        #contact-img {
+            content: url('S2S\images\contact us img (1).png');
+        }
+
+        .slice img {
+            display: none;
+        }
     }
 
     @media (max-width: 575px) {
-        .field-container {
+        /* .field-container {
             max-width: 100%;
-        }
+        } */
 
-        h4 {
-            font-size: 1.6rem;
-        }
+       h4{
+        font-size: 2rem !important;
+        margin-top: 15% !important;
+       }
+       
 
         h5 {
             font-size: 0.9rem;
@@ -122,6 +152,17 @@
         .field-container .col-12 {
             padding: 0 !important;
             margin: 0 !important;
+        }
+
+        #name,
+        #email,
+        #message {
+            flex: 1 !important;
+            /* Makes the input stretchable */
+            padding: 10px !important;
+            /* Adds padding for better appearance */
+            box-sizing: border-box !important;
+            /* Ensures padding doesn't affect the width */
         }
     }
 
@@ -168,11 +209,26 @@
         color: white;
     }
 
-    
+
 
     @media (max-width:420px) {
         * {
             overflow-x: hidden;
+
+        }
+
+        .head h4 {
+            font-size: 1.5rem !important;
+
+        }
+
+        .head {
+            margin-top: 10% !important;
+        }
+
+        .head h5 {
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
 </style>
@@ -232,7 +288,7 @@
             </div>
         </div>
     </nav> -->
-    <div>
+    <div class="head">
         <h4 style="margin-top:6%;font-weight: bold;text-align: center;font-size: 2.5rem;">
             Let's get in <span style="color:  #fbb801;font-weight: bold;">touch now</span></h4>
         <h5 style="text-align: center;justify-content: center;font-weight:400;">Feel free to reach out to us using the
@@ -245,7 +301,7 @@
     <main class="field-container">
         <div class="row">
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="cu-form">
                 <div style="padding-top: 20px;padding-left: 20px">
                     <div style="color: #fab801;font-weight: 500;">
                         Contact Us
@@ -271,8 +327,8 @@
                         <textarea id="message" name="message" style="height: 8rem;" placeholder="Message"></textarea>  
 
 
-                        <button type="submit" class="btn mb-4" value="Submit" id="dnt-btn"
-                            style="width: 100%;">Submit</button>
+                        <button type="submit" class="btn mb-4" value="Submit" id="submit-btn"
+                            style="width: 100%;background-color: #fab801;color: white;font-size: 16px;font-weight: 400;">Submit</button>
 
                     </form>
                 </div>
@@ -286,11 +342,11 @@
 
 
     </main>
-    <main class="slice" style="margin-top: -25%;">
+    <main class="slice" style="margin-top: -22%;">
         <img src="./images/Subtract.png" alt="slice" width="100%">
     </main>
     <!--footer  -->
-    <div class="container-fluid footer mt-0 pt-0 wow fadeIn text-center" data-wow-delay="0.1s" id="footer">
+    <div class="container-fluid footer  mt-4 wow fadeIn text-center" data-wow-delay="0.1s" id="footer">
         <div class="container ">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
