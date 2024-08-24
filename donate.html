@@ -119,14 +119,20 @@
 
             .slice img {
                 height: auto;
+                display: none;
 
             }
 
             #contact-img {
+                display: none;
                 width: auto;
             }
            .donate-hero {
                 margin-top: 15% !important;
+            }
+
+            #contact-form{
+                width: 80% !important;
             }
         }
 
@@ -150,6 +156,9 @@
         }
 
         @media (max-width: 458px) {
+            h1{
+                overflow-y: hidden;
+            }
             h4 {
                 font-size: 1.4rem;
             }
@@ -169,6 +178,7 @@
         }
 
         @media (max-width: 320px) {
+            
             h4 {
                 font-size: 1.2rem;
                 margin-top: 12%;
@@ -286,7 +296,7 @@
     </section>
     <br>
     <br>
-    <section class="container-fluid py-5 donation-section" style="height:400px;">
+    <section class="container-fluid py-5 donation-section" >
         <div class="container">
             <h1 class="section-title">Your donation today will</h1>
             <div class="row g-4 justify-content-center donation-row">
