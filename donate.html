@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <title>Street2smart</title>
     <script type="text/javascript">
         (function () {
@@ -282,7 +284,7 @@
                     <a class="nav-link" href="Event.html">Events</a>
                     <a class="nav-link" href="volunteer.html">Volunteers</a>
                     <a class="nav-link" href="contact_us.html">Contact us</a>
-                    <!-- <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a> -->
+                    <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
                 </div>
             </div>
         </div>
@@ -365,18 +367,19 @@
 
                     <form id="contact-form">
                         <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
                         <br>
                         <br>
 
                         <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                         <br><br>
                         <label for="message"></label>
                         <textarea id="message" name="message" style="height: 8rem;" placeholder="Message"></textarea>  
 
 
-                        <input type="submit" value="Submit">  
+                        <button type="submit" class="btn mb-4" value="Submit" id="submit-btn"
+                            style="width: 100%;background-color: #fab801;color: white;font-size: 16px;font-weight: 400;">Submit</button>
 
                     </form>
                 </div>
@@ -445,6 +448,9 @@
 </div>
 <!-- footer -->
     <script>
+        (function () {
+            emailjs.init("3UkmqnHGHf-ZSTGdb"); // Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key
+        })();
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent default form submission
 
