@@ -2,25 +2,42 @@
 <html lang="en">
 
 <head>
+  <!-- Meta tags for character set and viewport settings -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Bootstrap CSS and JS for styling and functionality -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom stylesheets for additional styling -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
+
+  <!-- Font Awesome and Bootstrap Icons for social media and other icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Google Fonts for custom typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Animate.css for adding animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Page title -->
   <title>Street2smart</title>
+
+  <!-- Internal CSS styles -->
   <style>
+    /* Global body styles */
     body {
       font-family: 'Quicksand', sans-serif;
       margin-top: 5%;
     }
 
+    /* Card component styles */
     .card {
       background-color: #fff;
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -29,83 +46,79 @@
       text-align: center;
       border-radius: 8px;
       width: 90%;
-      /* max-width: 2000px; */
-      /* Adjust the maximum width to make the card smaller */
       margin-left: 5%;
       margin-right: 5%;
-      /* Center the card within the column */
     }
 
+    /* Card image styles */
     .card img {
       width: 100%;
       padding: 0px;
       justify-content: center;
     }
 
-
+    /* Card title styles */
     .card h3 {
       margin-top: 10px;
       font-size: 1.2rem;
       font-weight: bold;
     }
 
-
-
+    /* Header styles */
     h1 {
       color: #fbb801;
       text-align: center;
       font-weight: bolder;
     }
 
+    /* Button styles for 'See More' button */
     .btn-see-more {
       margin-top: 10px;
       background-color: #fbb801;
       color: white;
     }
 
+    /* Responsive styles for mobile view */
     @media (max-width: 576px) {
       .navbar-toggler {
         margin-left: auto;
       }
     }
 
+    /* Card image top styles */
     .card-img-top {
       width: 100%;
       height: 150px;
-      /* Adjust the image height as needed */
       object-fit: cover;
-      /* Maintain aspect ratio and cover the entire area */
     }
 
+    /* Card body padding */
     .card-body {
       padding: 10px;
-      /* Adjust the padding as needed */
     }
 
+    /* Card title font size */
     .card-title {
       font-size: 1rem;
-      /* Adjust the title font size as needed */
     }
 
+    /* Button font size and padding */
     .btn-see-more {
       font-size: 0.875rem;
-      /* Adjust the button font size as needed */
       padding: 5px 10px;
-      /* Adjust the button padding as needed */
     }
 
+    /* Margin-bottom for spacing between cards */
     .mb-4 {
       margin-bottom: 1.5rem;
-      /* Add space between the cards */
     }
 
+    /* Responsive styles for small screens */
     @media (max-width: 768px) {
-
       .col-lg-3,
       .col-md-4,
       .col-sm-6 {
         max-width: 100%;
-        /* Ensure the cards take full width on small screens */
       }
 
       .footer h1 {
@@ -113,6 +126,7 @@
       }
     }
 
+    /* Quick links styles */
     #quick a {
       color: white;
     }
@@ -120,29 +134,39 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-    style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
     <div class="container-fluid">
+      <!-- Brand name -->
       <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <!-- Toggler for responsive menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="justify-content: end;">
+      
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: end;">
         <div class="navbar-nav">
           <a class="nav-link" href="index.html" target="_blank" id="nav">Home</a>
           <a class="nav-link" href="index.html#about">About</a>
           <a class="nav-link active" href="Event.html" style="color: #fab801;">Events</a>
           <a class="nav-link" href="volunteer.html">Volunteers</a>
           <a class="nav-link" href="contact_us.html">Contact us</a>
+          <!-- Donate button -->
           <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
         </div>
       </div>
     </div>
   </nav>
+
+  <!-- Main content section for events -->
   <div class="container-fluid mt-1 pt-5">
     <div class="row justify-content-center">
+      <!-- Section title -->
       <h1>Events</h1>
+
+      <!-- Event 1 card -->
       <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
         <div class="card animate__animated animate__fadeIn">
           <img src="./images/about-2.jpg" alt="Event 1" class="card-img-top">
@@ -153,6 +177,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Event 2 card -->
       <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
         <div class="card animate__animated animate__fadeIn">
           <img src="./images/about-2.jpg" alt="Event 2" class="card-img-top">
@@ -163,6 +189,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Event 3 card -->
       <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
         <div class="card animate__animated animate__fadeIn">
           <img src="./images/about-2.jpg" alt="Event 3" class="card-img-top">
@@ -176,19 +204,16 @@
     </div>
   </div>
 
-
-
-  <!--footer-->
-  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
-    style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
+  <!-- Footer section -->
+  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer" style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
     <div class="container py-5">
       <div class="row g-5">
+        <!-- About section in footer -->
         <div class="col-lg-4 col-md-6">
           <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
-          <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
-            mission is to uplift individuals and communities through a range of initiatives aimed at addressing
-            fundamental needs and fostering sustainable development.</p>
-
+          <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our mission is to uplift individuals and communities through a range of initiatives aimed at addressing fundamental needs and fostering sustainable development.</p>
+          
+          <!-- Social media icons -->
           <div class="row">
             <div class="col-3"></div>
             <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
@@ -197,16 +222,17 @@
             <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
           </div>
           <br>
-
         </div>
+
+        <!-- Address section in footer -->
         <div class="col-lg-4 col-md-6" id="add">
-          <h5 class=" mb-4">Address</h5>
+          <h5 class="mb-4">Address</h5>
           <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
           <p><i class="fa fa-phone-alt me-3"></i>+1 (503) 360-8134</p>
-          <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org </p><br><br>
-
-
+          <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org</p>
         </div>
+
+        <!-- Quick links section in footer -->
         <div class="col-lg-4 col-md-6" id="quick">
           <h5 class="text-white mb-3">Quick Links</h5>
           <a class="btn btn-link" href="#about">About</a><br>
@@ -214,21 +240,14 @@
           <a class="btn btn-link" href="Event.html">Events</a><br>
           <a class="btn btn-link" href="volunteer.html">Volunteer</a>
         </div>
-
-
       </div>
     </div>
+  </div>
 
+  <!-- Footer bottom section -->
+  <div style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;" class="copyRights">
+    &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right Reserved. Powered by <a href="https://www.arjavatech.com/" style="color:black;background-color: white;"> Arjava Tech</a>
   </div>
-  <div style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;"
-    class="copyRights">
-    &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right
-    Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color:black;background-color: white;"> Arjava
-      Tech</a>
-    <br>
-    <br>
-  </div>
-  <!-- footer -->
 </body>
 
 </html>

@@ -1,24 +1,22 @@
 /* General Styles */
 body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif; /* Sets the font for the entire page */
 }
 
-
-
-
+/* Hero Section Styles */
 .hero {
     position: relative;
-    text-align: center;
+    text-align: center; /* Centers text within the hero section */
 }
 
 .hero h1 {
-    font-weight: bolder;
+    font-weight: bolder; /* Makes the hero section heading bold */
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    display: block;
+    display: block; /* Ensures the image takes full width and adjusts height automatically */
 }
 
 .hero-overlay {
@@ -29,79 +27,87 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Centers content within the overlay */
 }
 
 #para {
     margin-top: 15%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); /* Adds a blur effect to the background of the overlay */
     justify-content: center;
 }
 
+/* Button Styles */
 .btn-volunteer {
     background-color: white;
     color: black;
     width: 20%;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Sets font size for volunteer button */
 }
 
 .btn-volunteer:hover {
     background-color: white;
-    color: black;
+    color: black; /* Ensures the button colors do not change on hover */
 }
 
 .btn-donate {
     background-color: #fbb801;
     color: white;
     width: 20%;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Sets font size for donate button */
 }
 
 .btn-donate:hover {
     background-color: #fbb801;
-    color: white;
+    color: white; /* Ensures the button colors do not change on hover */
 }
 
+/* Hero Text Styles */
 .hero-txt h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Font size for heading in hero text */
     margin-bottom: 1rem;
 }
 
 .hero-txt p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Font size for paragraph in hero text */
     justify-content: center;
 }
 
+/* Button Spacing */
 .buttons .btn-volunteer,
 .buttons .btn-donate {
     margin: 5px;
     margin-left: 3%;
 }
 
+/* Section Title Styles */
 .section-title {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Margin below the section title */
 }
 
+/* Service Item Styles */
 .service-item img {
     height: 100px;
-    width: 100px;
+    width: 100px; /* Fixed size for images in service items */
 }
 
+/* About Button Styles */
 #about-btn {
     background-color: #fbb801;
-    color: white;
+    color: white; /* Styles for about button */
 }
 
+/* Border Style */
 #border {
-    border-bottom: 1px solid#fbb801;
+    border-bottom: 1px solid #fbb801; /* Adds a bottom border with a specific color */
 }
 
-@media (max-width: 991px) {
-  
+/* Media Queries for Responsive Design */
 
+/* For screens smaller than 991px */
+@media (max-width: 991px) {
     .hero-txt h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjusts font size for smaller screens */
     }
 
     .hero-txt p {
@@ -117,14 +123,14 @@ body {
     }
 
     .hero-overlay {
-        backdrop-filter: none;
-        /* Remove backdrop-filter */
+        backdrop-filter: none; /* Removes blur effect on smaller screens */
     }
 }
 
+/* For screens smaller than 575px */
 @media (max-width: 575px) {
     .hero-txt h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Further reduces font size */
     }
 
     .hero-txt p {
@@ -132,13 +138,12 @@ body {
     }
 
     .hero-overlay {
-        backdrop-filter: none;
-        /* Remove backdrop-filter */
+        backdrop-filter: none; /* Removes blur effect on extra small screens */
     }
 
     .service-item img {
         height: 80px;
-        width: 80px;
+        width: 80px; /* Adjusts size for service item images */
     }
 
     .team-text h5 {
@@ -150,87 +155,81 @@ body {
     }
 }
 
+/* For screens smaller than 576px */
 @media (max-width: 576px) {
-
-
-    .dnt-btn {
-        width: 10% !important;
+    .dnt-btn {  
+        width: 10% !important; /* Forces the width of the donate button */
     }
 
     .copyRights {
-        font-size: 12px;
+        font-size: 12px; /* Adjusts font size for copyright text */
     }
 
     * {
-        overflow-x: hidden;
+        overflow-x: hidden; /* Prevents horizontal scroll */
     }
 }
 
-.hero-overlay {
-    backdrop-filter: none;
-    /* Remove backdrop-filter */
-}
-
+/* For team item styles */
 .team-item {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .team-item:hover {
-    transform: translateY(-20px);
+    transform: translateY(-20px); /* Moves the item up on hover */
 }
 
 .team-item img {
-    border-bottom: 3px solid #fbb801;
+    border-bottom: 3px solid #fbb801; /* Adds a border at the bottom of the image */
 }
 
 .team-text {
-    padding: 20px;
+    padding: 20px; /* Adds padding inside the team text section */
 }
 
 .team-text h5 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Font size and weight for team member names */
 }
 
 .team-text p {
     font-size: 1rem;
-    color: #fbb801;
+    color: #fbb801; /* Font size and color for team member descriptions */
 }
 
 .team-social {
-    margin-top: 10px;
+    margin-top: 10px; /* Margin above social icons */
 }
 
 .team-social .btn {
     color: #fff;
     background-color: #fbb801;
-    margin: 0 5px;
+    margin: 0 5px; /* Styles for social buttons */
 }
 
+/* Footer Styles */
 .footer {
     background-color: white;
     color: black;
     width: 100%;
-
 }
 
 .footer h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for footer headings */
 }
-
 
 .footer p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: white;
+    color: white; /* Font size and color for footer paragraphs */
 }
 
 .btn-link {
-    text-decoration: none;
+    text-decoration: none; /* Removes underline from footer links */
 }
 
 .footer .btn-square {
@@ -242,11 +241,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 10px; /* Styles for circular footer buttons */
 }
 
 .footer .btn-square:hover {
-    background-color: #fbb801;
+    background-color: #fbb801; /* Ensures button color remains consistent on hover */
 }
 
 .copyRights {
@@ -254,45 +253,47 @@ body {
     background-color: white;
     text-align: center;
     padding-top: 14px;
-    background-size: cover;
-    font-size: smaller;
+    background-size: cover; /* Background cover style for copyright text */
+    font-size: smaller; /* Font size for copyright text */
 }
 
 #footer {
     background: url("images/footer.png") no-repeat center center;
-    background-size: cover;
+    background-size: cover; /* Background image for the footer */
 }
 
+/* Media Queries for Smaller Screens */
+
+/* For screens smaller than 767px */
 @media (max-width: 767px) {
     .footer .d-flex {
         justify-content: center;
-        margin: 0 auto;
+        margin: 0 auto; /* Centers footer content */
     }
 
     .footer .d-flex a {
-        margin: 0 5px;
+        margin: 0 5px; /* Adjusts margin for footer links */
     }
 
     #quick h5,
     #add h5 {
-        padding-left: 0;
+        padding-left: 0; /* Removes left padding from certain elements */
     }
 
     .footer h1 {
-        text-align: center;
+        text-align: center; /* Centers footer headings */
     }
 
     .hero-overlay {
-        backdrop-filter: none;
-        /* Remove backdrop-filter */
+        backdrop-filter: none; /* Removes backdrop filter on smaller screens */
     }
 }
 
-@media(max-width:450px) {
+/* For screens smaller than 450px */
+@media (max-width: 450px) {
     #para {
-        margin-top: 0;
-        /* margin-top: 35%; */
-        backdrop-filter: none;
+        margin-top: 0%; /* Adjusts margin for smaller screens */
+        backdrop-filter: none; /* Removes backdrop filter */
     }
 
     .hero-overlay {
@@ -304,30 +305,26 @@ body {
         justify-content: center;
         align-items: center;
         background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center;
-        background-size: cover;
-        /* backdrop-filter: none; */
-        /* Remove backdrop-filter */
-
+        background-size: cover; /* Background image for smaller screens */
     }
 
     .hero {
-        margin-top: 20%;
+        margin-top: 20%; /* Adjusts margin for hero section */
     }
 
     .hero h1 {
-        font-size: 14px !important;
-        margin-bottom: -20px;
+        font-size: 14px !important; /* Reduces font size for hero heading */
+        margin-bottom: -20px; /* Adjusts margin below heading */
     }
 
     .hero p {
-        /* font-size: 1rem; */
-        font-size: 10px !important;
-        padding-top: 8%;
+        font-size: 10px !important; /* Reduces font size for hero paragraph */
+        padding-top: 8%; /* Adjusts padding for hero paragraph */
     }
 
     .btn-volunteer:hover {
         background-color: white;
-        color: black;
+        color: black; /* Ensures button colors do not change on hover */
     }
 
     .btn-donate {
@@ -335,7 +332,7 @@ body {
         color: white;
         font-size: 10px !important;
         width: 30% !important;
-        margin-top: 5px !important;
+        margin-top: 5px !important; /* Adjusts button size and margin */
     }
 
     .btn-donate:hover {
@@ -348,37 +345,35 @@ body {
         color: black;
         font-size: 10px !important;
         width: 30% !important;
-        margin: 0 !important;
-
+        margin: 0 !important; /* Adjusts button size and margin */
     }
 
     #about h1 {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Reduces font size for about section heading */
     }
 
     #about p {
-        font-size: smaller;
+        font-size: smaller; /* Reduces font size for about section paragraphs */
     }
 
     #our-mission h1 {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Reduces font size for mission section heading */
     }
 
     #our-mission h4 {
-        font-size: 1rem;
+        font-size: 1rem; /* Reduces font size for mission section subheading */
     }
 
     #our-mission p {
-        font-size: smaller;
+        font-size: smaller; /* Reduces font size for mission section paragraphs */
     }
 
     #footer p {
-        font-size: 15px;
+        font-size: 15px; /* Reduces font size for footer paragraphs */
     }
 
     #about-btn {
-        font-size: 0.05rem;
-
+        font-size: 0.05rem; /* Reduces font size for about button */
     }
 
     #footer {
@@ -388,261 +383,235 @@ body {
         color: white !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
-        width: 100% !important;
-        /* height: 100vh !important; */
+        width: 100% !important; /* Ensures footer covers full width */
     }
-
 }
 
+/* For screens smaller than 768px */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 0.05rem;
+        font-size: 0.05rem; /* Adjusts font size for hero heading */
     }
 
     .hero p {
-        font-size: 1rem;
-
+        font-size: 1rem; /* Adjusts font size for hero paragraph */
     }
 
     body {
-        margin-top: 4%;
+        margin-top: 4%; /* Adjusts margin for the body */
     }
 
     .hero {
         background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center;
-        background-size: cover;
-
+        background-size: cover; /* Background image for hero section on smaller screens */
     }
 
     .hero-overlay {
-        backdrop-filter: none;
-        /* Remove backdrop-filter */
+        backdrop-filter: none; /* Removes backdrop filter */
     }
 
     #para {
-        margin-top: 0%;
-        backdrop-filter: none;
-        /* Uncomment the following line if you want to use a background color instead of the image */
-        /* background-color: #fbb801; */
-        /* background: url("S2S/images/MOBILE_IMAGE.png") no-repeat center center; */
-        /* background-size: cover; Ensures the image covers the entire area */
+        margin-top: 0%; /* Adjusts margin for paragraph */
+        backdrop-filter: none; /* Removes backdrop filter */
     }
 
-
     .buttons {
-        flex-direction: column;
+        flex-direction: column; /* Stacks buttons vertically */
     }
 
     #about {
-        margin-top: 9%;
+        margin-top: 9%; /* Adjusts margin for about section */
     }
-
 
     .btn-volunteer,
     .btn-donate {
         width: 150px;
-        margin: 5px 0;
+        margin: 5px 0; /* Adjusts width and margin for buttons */
     }
 
     #footer {
         width: 100%;
-        padding-left: -20%;
+        padding-left: -20%; /* Adjusts padding for footer */
     }
 
-    /* body {
-        margin-top: 10%;
-    } */
-
     #about h1 {
-        font-size: 1.7rem;
+        font-size: 1.7rem; /* Adjusts font size for about section heading */
     }
 
     #about p {
-        font-size: smaller;
+        font-size: smaller; /* Reduces font size for about section paragraphs */
     }
 
     #our-mission h1 {
-        font-size: 1.7rem;
+        font-size: 1.7rem; /* Adjusts font size for mission section heading */
     }
 
     #our-mission h4 {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Adjusts font size for mission section subheading */
     }
 
     #our-mission p {
-        font-size: smaller;
+        font-size: smaller; /* Reduces font size for mission section paragraphs */
     }
-
 }
 
+/* For screens smaller than 320px */
 @media (max-width: 320px) {
     .hero {
-        margin-top: 15%;
+        margin-top: 15%; /* Adjusts margin for hero section */
     }
 
     .hero h1 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Reduces font size for hero heading */
     }
 
     .hero p {
-        font-size: 0.8rem;
-
+        font-size: 0.8rem; /* Reduces font size for hero paragraph */
     }
 
     #para {
-        margin-top: 0%;
-        /* backdrop-filter: blur(7px); */
-
+        margin-top: 0%; /* Adjusts margin for paragraph */
     }
-
-
 
     .btn-volunteer,
     .btn-donate {
-        font-size: 0.8rem;
-        width: 200px;
+        font-size: 0.8rem; /* Reduces font size for buttons */
+        width: 200px; /* Adjusts width for buttons */
     }
 
     .display-6 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Adjusts font size for display elements */
     }
 
     .service-item h4 {
-        font-size: 1rem;
+        font-size: 1rem; /* Reduces font size for service item headings */
     }
 
     .service-item p {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduces font size for service item paragraphs */
     }
 
     .team-text h5 {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduces font size for team member names */
     }
 
     .team-text p {
-        font-size: 0.6rem;
+        font-size: 0.6rem; /* Reduces font size for team member descriptions */
     }
 
     .footer p {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduces font size for footer paragraphs */
     }
 
     .footer h5 {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjusts font size for footer subheadings */
     }
 
     .btn {
-        font-size: 0.8rem;
-
+        font-size: 0.8rem; /* Reduces font size for all buttons */
     }
-
- 
-
 }
 
+/* For screens smaller than 1440px */
 @media (max-width: 1440px) {
-
-
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2.2rem; /* Adjusts font size for hero heading */
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Adjusts font size for hero paragraph */
     }
 
     .btn-volunteer,
     .btn-donate {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjusts font size for buttons */
     }
 
     #about-btn {
         font-size: 1.1rem;
-        padding: 0.5rem 1.2rem;
+        padding: 0.5rem 1.2rem; /* Adjusts padding and font size for about button */
     }
 
     .display-6 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Adjusts font size for display elements */
     }
 
     .service-item h4 {
-        font-size: 1.4rem;
+        font-size: 1.4rem; /* Adjusts font size for service item headings */
     }
 
     .service-item p {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjusts font size for service item paragraphs */
     }
 
     .team-text h5 {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* Adjusts font size for team member names */
     }
 
     .team-text p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Adjusts font size for team member descriptions */
     }
 
     .footer p {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjusts font size for footer paragraphs */
     }
 
     .footer h5 {
-        font-size: 1.3rem;
+        font-size: 1.3rem; /* Adjusts font size for footer subheadings */
     }
 }
-
-
 
 /* CSS for slide-in animation */
 @keyframes slideIn {
     from {
         transform: translateY(50px);
-        opacity: 0;
+        opacity: 0; /* Starts the animation from being invisible */
     }
 
     to {
         transform: translateY(0);
-        opacity: 1;
+        opacity: 1; /* Ends the animation fully visible */
     }
 }
 
 .slide-in {
-    animation: slideIn 1s ease-in-out;
+    animation: slideIn 1s ease-in-out; /* Applies slide-in animation */
 }
 
 /* CSS for zoom-in hover effect */
 .service-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .service-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px 0 rgba(216, 20, 20, 0.3), 0 12px 40px 0 rgba(0, 0, 0, 0.22);
+    transform: scale(1.05); /* Scales up the item slightly on hover */
+    box-shadow: 0 8px 16px 0 rgba(216, 20, 20, 0.3), 0 12px 40px 0 rgba(0, 0, 0, 0.22); /* Adds shadow effect on hover */
 }
 
 /* Additional CSS for cards */
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Scales up the card slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
 }
 
 /* Additional styling for card content */
 .card img {
     width: 100%;
-    height: auto;
+    height: auto; /* Ensures images in cards are responsive */
 }
 
 .card h3 {
     margin: 15px 0;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Font size for card headings */
 }
 
 .card p {
     font-size: 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Font size and margin for card paragraphs */
 }
 
 .btn-see-more {
@@ -651,45 +620,21 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 5px; /* Styles for "see more" button */
 }
 
 .btn-see-more:hover {
     background-color: #fbb801;
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Ensures button color and style remain consistent on hover */
 }
 
+/* Volunteer Section Styles */
 #volunteer h4 {
     padding-left: 5%;
-    margin-left: 5%;
+    margin-left: 5%; /* Adds padding and margin to volunteer section headings */
 }
-
-
-
-
-
-
-@media(max-width:400px) {
-    .hero h1 {
-        font-weight: bolder;
-        font-size: 18px;
-    }
-
-    .hero img {
-        width: 100%;
-        /* margin-top: 500px; */
-        height: auto;
-        backdrop-filter: none;
-        display: block;
-    }
-
-}
-
-
-
-
 
 #short {
-    margin-left: 3%;
+    margin-left: 3%; /* Adds margin to the left of short elements */
 }
