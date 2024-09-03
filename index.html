@@ -2,115 +2,97 @@
 <html lang="en">
 
 <head>
-  <!-- Meta tags for character encoding and responsive design -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Bootstrap CSS for styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <!-- Bootstrap JS for interactive components -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Custom CSS for additional styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
-  
-  <!-- Font Awesome and Bootstrap Icons for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-  
-  <!-- Google Fonts for custom font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  
-  <!-- Page title -->
   <title>Street2smart</title>
 
-  <!-- Inline CSS for specific page elements -->
-  <style>
-    .hero {
-      position: relative;
-      overflow: hidden;
-    }
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
 
-    .hero img {
-      width: 100%;
-      height: auto;
-    }
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
 
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .hero h1 {
-      font-size: 2.5rem;
-    }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 
-    .hero p {
-      font-size: 1.2rem;
-    }
+  .hero p {
+    font-size: 1.2rem;
 
-    .buttons {
-      margin-top: 20px;
-    }
+  }
 
-    .btn-volunteer,
-    .btn-donate {
-      margin: 5px;
-    }
+  .buttons {
+    margin-top: 20px;
+  }
 
-    #quick a {
-      color: white;
-    }
-  </style>
+  .btn-volunteer,
+  .btn-donate {
+    margin: 5px;
+  }
+
+  #quick a {
+    color: white;
+  }
+</style>
 
 </head>
 
+
+
 <body>
-  <!-- Navbar with brand and navigation links -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white;filter: drop-shadow(1px 1px 20px rgba(8, 8, 8, 0.1));">
-    <div class="container-fluid">
-      <!-- Brand name -->
-      <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+  style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
 
-      <!-- Hamburger button for mobile view -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Navbar links -->
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="justify-content: end;">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="index.html" style="color: #fab801;">Home</a>
-          <a class="nav-link" href="index.html#about">About</a>
-          <a class="nav-link" href="Event.html">Events</a>
-          <a class="nav-link" href="volunteer.html">Volunteers</a>
-          <a class="nav-link" href="contact_us.html">Contact us</a>
-          <!-- Donate button -->
-          <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
-        </div>
+          <div class="navbar-nav">
+              <a class="nav-link active" href="index.html" style="color: #fab801;">Home</a>
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="Event.html">Events</a>
+              <a class="nav-link" href="volunteer.html">Volunteers</a>
+              <a class="nav-link" href="contact_us.html">Contact us</a>
+              <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
+          </div>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero section with background image and overlay -->
   <header class="hero mb-5">
     <img src="./images/hero_img.png" alt="Hero Image" class="img-fluid hero-img">
     <div class="hero-overlay">
       <div class="container">
         <div class="row">
-          <!-- Hero text content -->
           <div class="col text-center text-white" id="para" style="padding-top: 2%;">
             <h1 class="display-4">Empowering Communities, <span style="color: #fbb801">Enriching lives</span></h1>
             <div class="row justify-content-center">
@@ -120,7 +102,6 @@
                   addressing fundamental needs and fostering sustainable development.</p>
               </div>
             </div>
-            <!-- Volunteer and Donate buttons -->
             <div class="buttons mt-3">
               <a href="volunteer.html"><button class="btn btn-volunteer btn-lg">Volunteer</button></a>
               <a href="donate.html"><button class="btn btn-donate btn-lg">Donate</button></a>
@@ -131,22 +112,23 @@
     </div>
   </header>
 
-  <!-- About section with text and image -->
-  <section id="about">
+
+  <!-- About Start -->
+  <section id="about" >
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6">
-          <!-- Image container with overlay -->
           <div class="position-relative overflow-hidden h-100" style="min-height: 400px">
-            <img class="position-absolute w-100 h-100 pt-5 pe-5" src="./images/about.png" alt="" style="object-fit: cover" />
+            <img class="position-absolute w-100 h-100 pt-5 pe-5" src="./images/about.png" alt=""
+              style="object-fit: cover" />
             <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="images/about-2.jpg" alt=""
               style="width: 200px; height: 200px" />
           </div>
         </div>
         <div class="col-lg-6">
           <div class="h-100">
-            <!-- About section title and text -->
-            <div class="d-inline-block rounded-pill py-1 px-3 mb-3" id="about-btn" style="background-color: #fbb801;color: white;">
+            <div class="d-inline-block rounded-pill py-1 px-3 mb-3" id="about-btn"
+              style="background-color: #fbb801;color: white;">
               About Us
             </div>
             <h1 class="display-6 mb-5" style="font-weight: 500;">Empowering Communities, Enriching Lives</h1>
@@ -169,19 +151,18 @@
       </div>
     </div>
   </section>
+  <!-- About End -->
 
-  <!-- Our Mission section with different initiatives -->
+  <!-- Our Mission -->
   <section id="our-mission" class="py-5">
     <div class="container">
       <div class="text-center mx-auto mb-5" style="max-width: 500px">
-        <!-- Section title -->
         <div class="d-inline-block rounded-pill py-1 px-3 mb-3" style="background-color:#fbb801;color:white;">
           Our missions
         </div>
         <h1 class="display-6 mb-5" style="font-weight: 500;">Learn More What We Do And Get Involved</h1>
       </div>
       <div class="row g-4 justify-content-center">
-        <!-- Mission item 1: Providing Food, Clothing, and Shelter -->
         <div class="col-lg-4 col-md-6">
           <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
             style="box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
@@ -189,93 +170,163 @@
             <h4 class="mb-3">Providing Food, Clothing, and Shelter</h4>
             <p class="mb-4">
               No one should have to worry about their next meal, a safe place to sleep, or having adequate clothing.
-              We provide the essentials to those in need.
+              We provide essential resources to ensure everyone in our community has access to these basic
+              necessities.
             </p>
           </div>
         </div>
-        <!-- Mission item 2: Advocating for Rights and Equal Opportunities -->
         <div class="col-lg-4 col-md-6">
           <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
             style="box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             <img class="img-fluid mb-4" src="./images/icons/Mask group-1.png" alt="" />
-            <h4 class="mb-3">Advocating for Rights and Equal Opportunities</h4>
+            <h4 class="mb-3">Education and Sharing of Knowledge</h4>
             <p class="mb-4">
-              We work to raise awareness and fight for the rights of the underprivileged, ensuring that they have
-              access to the opportunities and services they deserve.
+              Education is a powerful tool for change. We offer educational programs and workshops to empower
+              individuals with the knowledge and skills they need to succeed. From literacy classes to vocational
+              training, we are committed to lifelong learning.
             </p>
           </div>
         </div>
-        <!-- Mission item 3: Promoting Education and Lifelong Learning -->
         <div class="col-lg-4 col-md-6">
           <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
-            style="box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="img-fluid mb-4" src="./images/icons/Mask group-2.png" alt="" />
-            <h4 class="mb-3">Promoting Education and Lifelong Learning</h4>
-            <p class="mb-4">
-              Education is a powerful tool for change. We promote learning and development through various programs,
-              providing resources and opportunities for all ages.
-            </p>
-          </div>
-        </div>
-        <!-- Mission item 4: Fostering Health and Well-being -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
-            style="box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            style="box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             <img class="img-fluid mb-4" src="./images/icons/Mask group-3.png" alt="" />
-            <h4 class="mb-3">Fostering Health and Well-being</h4>
+            <h4 class="mb-3">Empowering People</h4>
             <p class="mb-4">
-              Good health is fundamental to living a full life. We support initiatives that promote physical, mental,
-              and emotional well-being for individuals and communities.
+              Empowerment is at the heart of what we do. By providing resources, support, and opportunities for
+              personal growth, we enable individuals to take control of their lives and build a better future for
+              themselves and their families.
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Our Mission End -->
 
-  <!-- Footer with quick links, contact info, and social media icons -->
-  <footer class="footer bg-dark text-white py-5">
+  <!-- Our Mission -->
+  <section id="our-mission" class="py-5">
     <div class="container">
-      <div class="row">
-        <!-- About section in footer -->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-white mb-3">About</h5>
-          <p class="text-muted">Street2smart is a nonprofit organization dedicated to serving those in need through a
-            holistic approach to social welfare and sustainable development.</p>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+            style="box-shadow: 0 4px 8px 0 rgba(17, 17, 17, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <img class="img-fluid mb-4" src="./images/icons/Mask group-5.png" alt="" />
+            <h4 class="mb-3">Employment Opportunities</h4>
+            <p class="mb-4">
+
+              We connect job seekers with employers, provide job training, and support career development. Our goal is
+              to help individuals find sustainable employment and achieve financial independence.
+
+            </p>
+          </div>
         </div>
-        <!-- Quick Links in footer -->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-white mb-3">Quick Links</h5>
-          <ul class="list-unstyled" id="quick">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+            style="box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <img class="img-fluid mb-4" src="./images/icons/Mask group-4.png" alt="" />
+            <h4 class="mb-3">Support Other Non-profits</h4>
+            <p class="mb-4">
+              Our reach extends beyond our local community. We collaborate with other nonprofits and NGOs worldwide to
+              share resources, knowledge, and support, amplifying our impact on a global scale.
+            </p>
+          </div>
         </div>
-        <!-- Contact Information in footer -->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-white mb-3">Contact</h5>
-          <ul class="list-unstyled text-muted">
-            <li><a href="mailto:info@street2smart.org">info@street2smart.org</a></li>
-            <li><span>123 Charity St, City, Country</span></li>
-            <li><span>+123 456 7890</span></li>
-          </ul>
-        </div>
-        <!-- Social media icons in footer -->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-white mb-3">Follow Us</h5>
-          <div class="d-flex">
-            <a href="#" class="btn btn-outline-light btn-social rounded-circle"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="btn btn-outline-light btn-social rounded-circle"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="btn btn-outline-light btn-social rounded-circle"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="btn btn-outline-light btn-social rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item bg-white text-center h-100 p-4 p-xl-5"
+            style="box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.09),0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <img class="img-fluid mb-4" src="./images/icons/Mask group-2.png" alt="" />
+            <h4 class="mb-3">Provide Scholarship To Students</h4>
+            <p class="mb-4">
+              Empowerment is at the heart of what we do. By providing resources, support, and opportunities for
+              personal growth, we enable individuals to take control of their lives and build a better future for
+              themselves and their families.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
+  <!-- Our Mission End -->
+
+
+   <!--footer-->
+   <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
+   style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
+   <div class="container py-5">
+     <div class="row g-5">
+       <div class="col-lg-4 col-md-6">
+         <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
+         <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
+           mission is to uplift individuals and communities through a range of initiatives aimed at addressing
+           fundamental needs and fostering sustainable development.</p>
+
+         <div class="row">
+           <div class="col-3"></div>
+           <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+           <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+           <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+           <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+         </div>
+         <br>
+
+       </div>
+       <div class="col-lg-4 col-md-6" id="add">
+         <h5 class=" mb-4">Address</h5>
+         <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+         <p><i class="fa fa-phone-alt me-3"></i>+1 (503) 360-8134</p>
+         <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org </p><br><br>
+
+
+       </div>
+       <div class="col-lg-4 col-md-6" id="quick">
+         <h5 class="text-white mb-3">Quick Links</h5>
+         <a class="btn btn-link" href="#about">About</a><br>
+         <a class="btn btn-link" href="contact_us.html">Contact Us</a><br>
+         <a class="btn btn-link" href="Event.html">Events</a><br>
+         <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+       </div>
+
+
+     </div>
+   </div>
+
+ </div>
+ <div style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;"
+   class="copyRights">
+   &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right
+   Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color:black;background-color: white;"> Arjava
+     Tech</a>
+   <br>
+   <br>
+ </div>
+ <!-- footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // JavaScript to add slide-in class on scroll
+    document.addEventListener('DOMContentLoaded', function () {
+      const serviceItems = document.querySelectorAll('.service-item');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      serviceItems.forEach(item => {
+        observer.observe(item);
+      });
+    });
+  </script>
+
+
 </body>
 
 </html>

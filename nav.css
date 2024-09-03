@@ -1,96 +1,149 @@
 /* Style for the donate button */
 #dnt-btn {
-    background-color: #fbb801; /* Sets the background color */
-    color: #fff; /* Sets the text color */
-    font-size: 18px; /* Sets the font size */
+    background-color: #fbb801;
+    /* Sets the background color */
+    color: #fff;
+    /* Sets the text color */
+    font-size: 18px;
+    /* Sets the font size */
     /* width: 150%; Uncomment if you want the button to be wider */
-    margin-top: 5px; /* Adds top margin */
-    font-weight: bold; /* Makes the font bold */
+    margin-top: 5px;
+    /* Adds top margin */
+    font-weight: bold;
+    /* Makes the font bold */
 }
 
 /* Styles for navigation links */
 .nav-link {
     position: relative;
-    display: inline-block; /* Ensures the link is inline and allows margin */
-    text-decoration: none; /* Removes underline from links */
-    color: black; /* Sets the text color */
-    margin: 0 15px; /* Adds horizontal margin */
-    font-size: 20px; /* Sets the font size */
-    font-weight: 600; /* Sets the font weight */
+    display: inline-block;
+    /* Ensures the link is inline and allows margin */
+    text-decoration: none;
+    /* Removes underline from links */
+    color: black;
+    /* Sets the text color */
+    margin: 0 15px;
+    /* Adds horizontal margin */
+    font-size: 20px;
+    /* Sets the font size */
+    font-weight: 600;
+    /* Sets the font weight */
 }
 
 /* Hover effect for navigation links */
 .nav-link:hover {
-    color: #fbb801; /* Changes text color on hover */
+    color: #fbb801;
+    /* Changes text color on hover */
 }
 
 /* Underline effect on hover */
 .nav-link:hover::after {
-    width: 100%; /* Expands the underline to full width on hover */
-    left: 0; /* Aligns the underline to the left */
-    color: #fbb801; /* Sets the color of the text on hover */
+    width: 100%;
+    /* Expands the underline to full width on hover */
+    left: 0;
+    /* Aligns the underline to the left */
+    color: #fbb801;
+    /* Sets the color of the text on hover */
 }
 
 /* Underline styling */
 .nav-link::after {
-    content: ''; /* Creates an empty content element for the underline */
-    position: absolute; /* Positions the underline absolutely */
-    width: 0; /* Initial width of the underline */
-    height: 2px; /* Height of the underline */
-    display: block; /* Displays the underline as a block element */
-    margin-top: 5px; /* Adds top margin */
-    left: 0; /* Aligns the underline to the left */
-    background: #000; /* Sets the underline color */
-    transition: width 0.9s ease, right 0.4s ease; /* Adds a transition effect for width and right properties */
-    color: white; /* Sets the color of the text */
+    content: '';
+    /* Creates an empty content element for the underline */
+    position: absolute;
+    /* Positions the underline absolutely */
+    width: 0;
+    /* Initial width of the underline */
+    height: 2px;
+    /* Height of the underline */
+    display: block;
+    /* Displays the underline as a block element */
+    margin-top: 5px;
+    /* Adds top margin */
+    left: 0;
+    /* Aligns the underline to the left */
+    background: #000;
+    /* Sets the underline color */
+    transition: width 0.9s ease, right 0.4s ease;
+    /* Adds a transition effect for width and right properties */
+    color: white;
+    /* Sets the color of the text */
 }
 
 /* Active state for navigation links */
 .nav-link.active::after {
-    width: 100%; /* Expands the underline to full width when active */
-    background: #000; /* Sets the underline color when active */
+    width: 100%;
+    /* Expands the underline to full width when active */
+    background: #000;
+    /* Sets the underline color when active */
 }
 
 /* Active state text color for navigation links */
 .nav-link.active {
-    color: #fbb801; /* Changes text color when active */
+    color: #fbb801;
+    /* Changes text color when active */
 }
 
 /* Removes box shadow from the navbar toggler when focused */
 .navbar-toggler:focus {
-    box-shadow: none; /* Removes the default box shadow */
+    box-shadow: none;
+    /* Removes the default box shadow */
 }
 
 /* Styles for navigation links on screens smaller than 900px */
 @media (max-width: 900px) {
     .nav-link.active::after {
-        width: 30%; /* Reduces the width of the underline when active */
-        background: #000; /* Keeps the underline color */
+        width: 30%;
+        /* Reduces the width of the underline when active */
+        background: #000;
+        /* Keeps the underline color */
     }
+
     .nav-link::after {
-        content: ''; /* Creates an empty content element for the underline */
-        position: absolute; /* Positions the underline absolutely */
-        width: 0%; /* Initial width of the underline */
-        height: 2px; /* Height of the underline */
-        display: block; /* Displays the underline as a block element */
-        margin-top: 5px; /* Adds top margin */
-        left: 0; /* Aligns the underline to the left */
-        background: #000; /* Sets the underline color */
-        transition: width 0.9s ease, right 0.4s ease; /* Adds a transition effect for width and right properties */
-        color: white; /* Sets the color of the text */
+        content: '';
+        /* Creates an empty content element for the underline */
+        position: absolute;
+        /* Positions the underline absolutely */
+        width: 0%;
+        /* Initial width of the underline */
+        height: 2px;
+        /* Height of the underline */
+        display: block;
+        /* Displays the underline as a block element */
+        margin-top: 5px;
+        /* Adds top margin */
+        left: 0;
+        /* Aligns the underline to the left */
+        background: #000;
+        /* Sets the underline color */
+        transition: width 0.9s ease, right 0.4s ease;
+        /* Adds a transition effect for width and right properties */
+        color: white;
+        /* Sets the color of the text */
     }
+
     .nav-link {
         position: relative;
-        display: inline-block; /* Ensures the link is inline and allows margin */
-        text-decoration: none; /* Removes underline from links */
-        color: black; /* Sets the text color */
-        margin: 0 15px; /* Adds horizontal margin */
-        font-size: 20px; /* Sets the font size */
-        font-weight: 600; /* Sets the font weight */
+        display: inline-block;
+        /* Ensures the link is inline and allows margin */
+        text-decoration: none;
+        /* Removes underline from links */
+        color: black;
+        /* Sets the text color */
+        margin: 0 15px;
+        /* Adds horizontal margin */
+        font-size: 20px;
+        /* Sets the font size */
+        font-weight: 600;
+        /* Sets the font weight */
     }
+
     .nav-link:hover::after {
-        width: 17%; /* Reduces the width of the underline on hover */
-        left: 0; /* Aligns the underline to the left */
-        color: #fbb801; /* Sets the color of the text on hover */
+        width: 17%;
+        /* Reduces the width of the underline on hover */
+        left: 0;
+        /* Aligns the underline to the left */
+        color: #fbb801;
+        /* Sets the color of the text on hover */
     }
 }

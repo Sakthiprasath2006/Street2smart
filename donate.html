@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap JS Bundle -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    
-    <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <title>Street2smart</title>
     <script type="text/javascript">
         (function () {
             emailjs.init({
@@ -35,17 +24,260 @@
         })();
     </script>
 
-    <title>Street2smart</title>
+    <style>
+        .donate-hero img {
+            width: 100%;
+        }
+
+        .field-container {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+            max-width: 850px;
+            margin: 50px auto;
+            position: relative
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius:
+                9px;
+        }
+
+        input[type="submit"] {
+            background-color:
+                #f00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #fbb801;
+            color: white;
+        }
+
+        input[type="text"] {
+            border-radius: 6px;
+        }
+
+        #footer {
+            margin-top: -10%;
+        }
+
+        /* @media (max-width: 1440px) {
+            .field-container {
+                max-width: 1200px;
+            }
+
+            h4 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .field-container {
+                max-width: 900px;
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+        } */
+
+        @media (max-width: 768px) {
+            .field-container {
+                flex-direction: column;
+                max-width: 90%;
+                /* padding: 10px; */
+            }
+
+            h4 {
+                font-size: 1.8rem;
+                margin-top: 10%;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            .slice img {
+                height: auto;
+                display: none;
+
+            }
+
+            #contact-img img {
+                width: 100% !important;
+                height: 100%;
+            }
+
+            .donate-hero {
+                margin-top: 7.5%;
+            }
+
+            #contact-form {
+                width: 80% !important;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .field-container {
+                max-width: 100%;
+            }
+
+            h4 {
+                font-size: 1.6rem;
+            }
+
+            h5 {
+                font-size: 0.9rem;
+            }
+
+            .field-container .col-12 {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            #contact-img img {
+                display: none;
+            }
+        }
+
+        @media (max-width: 458px) {
+            h1 {
+                overflow-y: hidden;
+            }
+
+            h4 {
+                font-size: 1.4rem;
+            }
+
+            h5 {
+                font-size: 0.8rem;
+            }
+
+            input,
+            textarea {
+                padding: 8px;
+            }
+
+            input[type="submit"] {
+                padding: 8px 16px;
+            }
+
+            .donate-hero {
+                margin-top: 10% !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            h4 {
+                font-size: 1.2rem;
+                margin-top: 12%;
+            }
+
+            h5 {
+                font-size: 0.7rem;
+            }
+
+            input,
+            textarea {
+                padding: 6px;
+            }
+
+            input[type="submit"] {
+                padding: 6px 12px;
+            }
+
+            .donate-hero {
+                margin-top: 13% !important;
+            }
+        }
+
+        #quick a {
+            color: white;
+        }
+
+        .donation-section {
+            background-color: hsl(44, 99%, 49%, 0.1);
+        }
+
+        .section-title {
+            font-weight: bold;
+            text-align: center;
+            padding-top: 1%;
+        }
+
+        .donation-row {
+            padding-top: 4%;
+            padding-bottom: 3%;
+        }
+
+        .donation-col {
+            text-align: center;
+        }
+
+        .donation-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+            /* Equivalent to mb-3 in Bootstrap */
+        }
+
+        .donation-col h4 {
+            margin-bottom: 1.5rem;
+            /* Equivalent to mb-4 in Bootstrap */
+            font-size: 1rem;
+        }
+
+        .navbar-nav {
+            display: flexbox;
+            margin-left: auto;
+
+        }
+
+        .img-fluid {
+            width: 35% !important;
+        }
+
+        #contact-img img {
+            width: 100%;
+            /* height: 65; */
+            margin-top: -8%;
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white; filter: drop-shadow(1px 1px 20px rgba(8, 8, 8, 0.1));">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+        style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color: black; font-weight: bold;">Street2Smart</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#" style="color: black;font-weight: bold;">Street2Smart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: end;">
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="justify-content: end;">
                 <div class="navbar-nav">
                     <a class="nav-link" href="index.html" id="nav">Home</a>
                     <a class="nav-link" href="index.html#about">About</a>
@@ -57,16 +289,14 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <header class="donate-hero" style="margin-top: 4%;">
         <img src="./images/donate page.png" alt="donate-her">
-    </header>
 
-    <!-- Main Content -->
+    </header>
     <section class="container mt-4">
-        <h1 style="color: #fbb801; text-align: center; font-weight: bold;">Donate</h1>
-        <p style="text-align: center; padding-top: 1%; padding-bottom: 1%;">Your donation helps us empower communities and enrich lives. Scan the QR code below to make a quick and secure donation.</p>
+        <h1 style="color:  #fbb801;text-align: center;font-weight: bold;">Donate</h1>
+        <p style="text-align: center;padding-top: 1%;padding-bottom: 1%;">Your donation helps us empower communities and
+            enrich lives Scan the QR code below to make a quick and secure donation.</p>
         <div class="container mt-4">
             <div class="row">
                 <div class="col-md-6 text-center">
@@ -74,20 +304,20 @@
                 </div>
                 <div class="col-md-6">
                     <ol>
-                        <li>Use your UPI app to scan the QR code</li>
+                        <li> Use your UPI app to scan the QR code</li>
                         <br>
-                        <li>Confirm the donation amount and recipient details in your UPI app</li>
+                        <li> Confirm the donation amount and recipient details in your UPI opp</li>
                         <br>
-                        <li>Enter your UPI PIN to complete the donation</li>
+                        <li> Enter your UPI PIN to complete the donation</li>
                         <h5 class="mt-4">"Thanks for the <span style="color: #fbb801;">donation</span>"</h5>
                     </ol>
                 </div>
             </div>
         </div>
+
     </section>
-
     <br>
-
+    <br>
     <section class="container-fluid py-5 donation-section">
         <div class="container">
             <h1 class="section-title">Your donation today will</h1>
@@ -108,68 +338,145 @@
         </div>
     </section>
 
-    <!-- Contact Us Section -->
+
     <div>
-        <h4 style="margin-top:6%; font-weight: bold; text-align: center; font-size: 2.5rem;">Let's get in <span style="color: #fbb801; font-weight: bold;">touch now</span></h4>
-        <h5 style="text-align: center; justify-content: center; font-weight:400;">Feel free to reach out to us using the options below, and our dedicated team will respond to your inquiries promptly.</h5>
+        <h4 style="margin-top:6%;font-weight: bold;text-align: center;font-size: 2.5rem;">
+            Let's get in <span style="color:  #fbb801;font-weight: bold;">touch now</span></h4>
+        <h5 style="text-align: center;justify-content: center;font-weight:400;">Feel free to reach out to us using the
+            options below, and our dedicated team will respond
+            <br> to your inquiries promptly.
+        </h5>
     </div>
+
 
     <main class="field-container">
         <div class="row">
+
             <div class="col-sm-6">
-                <div style="margin-top: 20px; margin-left: 20px">
-                    <div style="color: #fab801; font-weight: 500;">Contact Us</div>
+                <div style="margin-top: 20px;margin-left: 20px">
+                    <div style="color: #fab801;font-weight: 500;">
+                        Contact Us
+                    </div>
+
                     <br>
+
                     <h5>How can we help?</h5>
+
                     <p>Have a question or feedback? Fill out the form below, and we'll get back to you.</p>
+
+
                     <form id="contact-form">
                         <label for="name"></label>
                         <input type="text" id="name" name="name" placeholder="Name" required>
-                        <br><br>
+                        <br>
+                        <br>
+
                         <label for="email"></label>
                         <input type="email" id="email" name="email" placeholder="Email" required>
                         <br><br>
                         <label for="message"></label>
-                        <textarea id="message" name="message" style="height: 8rem;" placeholder="Message"></textarea>
-                        <button type="submit" class="btn mb-4" value="Submit" id="submit-btn" style="width: 100%; background-color: #fab801; color: white; font-size: 16px; font-weight: 400;">Submit</button>
+                        <textarea id="message" name="message" style="height: 8rem;" placeholder="Message"></textarea>  
+
+
+                        <button type="submit" class="btn mb-4" value="Submit" id="submit-btn"
+                            style="width: 100%;background-color: #fab801;color: white;font-size: 16px;font-weight: 400;">Submit</button>
+
                     </form>
                 </div>
             </div>
-            <div class="col-sm-6" style="padding-top: 3.9%; padding-left: 9px;" id="contact-img">
+
+
+            <div class="col-sm-6" style="padding-top: 3.9%;padding-left: 9px;" id="contact-img">
                 <img src="./images/contact us img.png" alt="contact">
             </div>
         </div>
-    </main>
 
+    </main>
     <main class="slice">
-        <img src="./images/Subtract.png" alt="slice" style="width: 100%; z-index: -1; margin-top: -26%; overflow: hidden; margin-bottom: -4%;">
+        <img src="./images/Subtract.png" alt="slice"
+            style="width: 100%;z-index: -1;margin-top: -26%;overflow: hidden;margin-bottom: -4%;">
     </main>
+      <!--footer-->
+  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
+  style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
+        <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
+          mission is to uplift individuals and communities through a range of initiatives aimed at addressing
+          fundamental needs and fostering sustainable development.</p>
 
-    <!-- Footer -->
-    <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer" style="text-align: center; background: url(./images/footer.png); background-size: cover; color: white;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
-                    <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our mission is to uplift individuals and communities through a range of initiatives aimed at creating positive change.</p>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link text-white" href="index.html">Home</a>
-                    <a class="btn btn-link text-white" href="index.html#about">About</a>
-                    <a class="btn btn-link text-white" href="Event.html">Events</a>
-                    <a class="btn btn-link text-white" href="volunteer.html">Volunteers</a>
-                    <a class="btn btn-link text-white" href="contact_us.html">Contact us</a>
-                    <a class="btn btn-link text-white" href="donate.html">Donate</a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-4">Contact Us</h5>
-                    <p><i class="bi bi-geo-alt me-2"></i>123 Street Name, City, Country</p>
-                    <p><i class="bi bi-telephone me-2"></i>+123 456 789</p>
-                    <p><i class="bi bi-envelope me-2"></i>info@street2smart.org</p>
-                </div>
-            </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
         </div>
+        <br>
+
+      </div>
+      <div class="col-lg-4 col-md-6" id="add">
+        <h5 class=" mb-4">Address</h5>
+        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+        <p><i class="fa fa-phone-alt me-3"></i>+1 (503) 360-8134</p>
+        <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org </p><br><br>
+
+
+      </div>
+      <div class="col-lg-4 col-md-6" id="quick">
+        <h5 class="text-white mb-3">Quick Links</h5>
+        <a class="btn btn-link" href="#about">About</a><br>
+        <a class="btn btn-link" href="contact_us.html">Contact Us</a><br>
+        <a class="btn btn-link" href="Event.html">Events</a><br>
+        <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+      </div>
+
+
     </div>
+  </div>
+
+</div>
+<div style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;"
+  class="copyRights">
+  &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right
+  Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color:black;background-color: white;"> Arjava
+    Tech</a>
+  <br>
+  <br>
+</div>
+<!-- footer -->
+    <script>
+        (function () {
+            emailjs.init("3UkmqnHGHf-ZSTGdb"); // Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key
+        })();
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Send the form data using EmailJS
+            emailjs.send("service_2btqguv", "template_dv75wf6", {
+                name: name,
+                email: email,
+                message: message
+            })
+                .then(function (response) {
+                    alert('Message sent successfully!');
+                    document.getElementById('contact-form').reset(); // Reset the form after successful submission
+                }, function (error) {
+                    alert('Failed to send message. Please try again later.');
+                });
+        });
+
+
+
+    </script>
+
 </body>
+
 </html>

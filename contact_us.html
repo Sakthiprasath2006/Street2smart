@@ -4,35 +4,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS for responsive design and styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Bootstrap JS for interactive components -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom CSS for additional styling -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <!-- Bootstrap Icons for additional icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google Fonts for custom typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Street2smart</title>
-    <!-- EmailJS script for sending emails -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <script type="text/javascript">
-        // Initialize EmailJS with the public key
         (function () {
             emailjs.init({
                 publicKey: "3UkmqnHGHf-ZSTGdb",
             });
         })();
     </script>
+
 </head>
 <style>
-    /* Styles for the contact form container */
     .field-container {
         display: flex;
         justify-content: center;
@@ -50,32 +43,42 @@
         border-radius: 8px;
     }
 
-    /* Styles for form labels */
     label {
         display: block;
         margin-bottom: 10px;
     }
 
-    /* Styles for form inputs and textareas */
     input,
     textarea {
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
-        border-radius: 9px;
+        border-radius:
+            9px;
     }
 
-    /* Styles for submit button */
     input[type="submit"] {
-        background-color: #fbb801;
-        color: white;
+        background-color: #f00;
+        color: #fff;
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    /* Media queries for responsive design */
+    input[type="submit"] {
+        background-color: #fbb801;
+        color: white;
+    }
+
+    input[type="text"] {
+        border-radius: 6px;
+    }
+
+    #footer {
+        margin-top: -01% !important;
+    }
+
     @media (max-width: 768px) {
         .field-container {
             flex-direction: column;
@@ -94,6 +97,7 @@
 
         .slice img {
             height: auto;
+
         }
 
         #contact-img {
@@ -104,10 +108,18 @@
             width: 500px;
         }
 
-        .field-container #contact-form input[type="text"],
-        .field-container #contact-form input[type="email"],
+        .field-container #contact-form input[type="text"] {
+            width: 100% !important;
+        }
+
+        .field-container #contact-form input[type="email"] {
+            width: 100% !important;
+
+        }
+
         .field-container #contact-form #message {
             width: 100% !important;
+
         }
 
         #submit-btn {
@@ -122,26 +134,36 @@
         .slice img {
             display: none;
         }
-
         #footer {
             margin-top: 25% !important;
         }
-
-        .head {
+        .head{
             margin-top: 9% !important;
         }
     }
 
     @media (max-width: 575px) {
+        /* .field-container {
+            max-width: 100%;
+        } */
+
         h4 {
             font-size: 2rem !important;
             margin-top: 15% !important;
         }
 
-        .field-container #contact-form input[type="text"],
-        .field-container #contact-form input[type="email"],
+        .field-container #contact-form input[type="text"] {
+            width: 80% !important;
+        }
+
+        .field-container #contact-form input[type="email"] {
+            width: 80% !important;
+
+        }
+
         .field-container #contact-form #message {
             width: 80% !important;
+
         }
 
         #submit-btn {
@@ -162,19 +184,19 @@
         #email,
         #message {
             flex: 1 !important;
+            /* Makes the input stretchable */
             padding: 10px !important;
+            /* Adds padding for better appearance */
             box-sizing: border-box !important;
+            /* Ensures padding doesn't affect the width */
         }
-
         #footer {
             margin-top: 15% !important;
         }
-
-        .head {
+        .head{
             margin-top: 4% !important;
         }
-
-        .head h4 {
+        .head h4{
             overflow-y: hidden;
         }
     }
@@ -222,9 +244,12 @@
         color: white;
     }
 
-    @media (max-width: 420px) {
+
+
+    @media (max-width:420px) {
         * {
             overflow-x: hidden;
+
         }
 
         #header {
@@ -235,10 +260,18 @@
             margin-top: 2%;
         }
 
-        .field-container #contact-form input[type="text"],
-        .field-container #contact-form input[type="email"],
+        .field-container #contact-form input[type="text"] {
+            width: 60% !important;
+        }
+
+        .field-container #contact-form input[type="email"] {
+            width: 60% !important;
+
+        }
+
         .field-container #contact-form #message {
             width: 60% !important;
+
         }
 
         #submit-btn {
@@ -248,6 +281,7 @@
 
         .head h4 {
             font-size: 1.5rem !important;
+
         }
 
         .head {
@@ -262,7 +296,7 @@
 </style>
 
 <body class="body">
-    <!-- Navigation Bar -->
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top"
         style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
         <div class="container-fluid">
@@ -271,7 +305,7 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: end;">
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="justify-content: end;">
                 <div class="navbar-nav">
                     <a class="nav-link" href="index.html" target="_blank" id="nav">Home</a>
                     <a class="nav-link" href="index.html#about">About</a>
@@ -283,8 +317,39 @@
             </div>
         </div>
     </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+        style="background-color:white;filter: drop-shadow(1px 1px 20px  rgba(8, 8, 8, 0.1));">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: black;font-weight: bold;">Street2Smart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-right" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteer.html">Volunteers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html"><button class="btn" id="dnt-btn" type="button">Donate</button></a>
+                    </li>
+                </ul>
 
-    <!-- Heading Section -->
+            </div>
+        </div>
+    </nav> -->
     <div class="head">
         <h4 style="margin-top:6%;font-weight: bold;text-align: center;font-size: 2.5rem;">
             Let's get in <span style="color:  #fbb801;font-weight: bold;">touch now</span></h4>
@@ -294,60 +359,139 @@
         </h5>
     </div>
 
-    <!-- Main Content Section -->
+
     <main class="field-container">
         <div class="row">
-            <!-- Contact Form Section -->
+
             <div class="col-sm-6" id="cu-form">
-                <div style="margin: 0 auto;">
+                <div style="padding-top: 20px;padding-left: 20px">
+                    <div style="color: #fab801;font-weight: 500;">
+                        Contact Us
+                    </div>
+
+                    <br>
+
+                    <h5>How can we help?</h5>
+
+                    <p>Have a question or feedback? Fill out the form below, and we'll get back to you.</p>
+
+
                     <form id="contact-form">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <br>
+                        <br>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <br><br>
+                        <label for="message"></label>
+                        <textarea id="message" name="message" style="height: 8rem;" placeholder="Message"></textarea>  
 
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
 
-                        <input type="submit" id="submit-btn" value="Send" />
+                        <button type="submit" class="btn mb-4" value="Submit" id="submit-btn"
+                            style="width: 100%;background-color: #fab801;color: white;font-size: 16px;font-weight: 400;">Submit</button>
+
                     </form>
                 </div>
             </div>
 
-            <!-- Contact Image Section -->
+
             <div class="col-sm-6" id="contact-img">
-                <img src="S2S/images/contact us img (1).png" alt="Contact Us" style="width: 100%; height: auto;" />
+                <img src="./images/contact us img.png" alt="contact" width="100%">
             </div>
         </div>
+
+
     </main>
+    <main class="slice" style="margin-top: -22%;">
+        <img src="./images/Subtract.png" alt="slice" width="100%">
+    </main>
+    <!--footer  -->  <!--footer-->
+  <div class="container-fluid footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer"
+  style="text-align: center;background: url(./images/footer.png);background-size: cover;color: white;">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <h1 class="fw-bold text-primary mb-4">Street2<span class="text-white">smart</span></h1>
+        <p>At Street2smart, we are dedicated to making a meaningful impact in the lives of those in need. Our
+          mission is to uplift individuals and communities through a range of initiatives aimed at addressing
+          fundamental needs and fostering sustainable development.</p>
 
-    <!-- Footer Section -->
-    <footer id="footer">
-        <p>&copy; 2024 Street2Smart. All rights reserved.</p>
-    </footer>
+        <div class="row">
+          <div class="col-3"></div>
+          <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-square me-1" href=""><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <br>
 
-    <!-- EmailJS Script for sending form data -->
+      </div>
+      <div class="col-lg-4 col-md-6" id="add">
+        <h5 class=" mb-4">Address</h5>
+        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+        <p><i class="fa fa-phone-alt me-3"></i>+1 (503) 360-8134</p>
+        <p><i class="fa fa-envelope me-3"></i>Info@street2smart.org </p><br><br>
+
+
+      </div>
+      <div class="col-lg-4 col-md-6" id="quick">
+        <h5 class="text-white mb-3">Quick Links</h5>
+        <a class="btn btn-link" href="#about">About</a><br>
+        <a class="btn btn-link" href="contact_us.html">Contact Us</a><br>
+        <a class="btn btn-link" href="Event.html">Events</a><br>
+        <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+<div style="color: black;background-color: white;text-align: center;padding-top: 14px;background-size: cover;"
+  class="copyRights">
+  &copy; <a href="index.html" style="color:black;background-color: white;">Street2Smart</a>, All Right
+  Reserved.Powerd BY <a href="https://www.arjavatech.com/" style="color:black;background-color: white;"> Arjava
+    Tech</a>
+  <br>
+  <br>
+</div>
+<!-- footer -->
     <script>
-        // Add event listener to the form's submit event
+        // Initialize EmailJS with your public key
+        (function () {
+            emailjs.init("3UkmqnHGHf-ZSTGdb"); // Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key
+        })();
+
+        // Add an event listener to handle form submission
         document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault(); // Prevent default form submission
 
-            // Get form data
-            const form = event.target;
-            const formData = new FormData(form);
+            // Collect form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-            // Send form data using EmailJS
-            emailjs.sendForm('your_service_id', 'your_template_id', formData)
+            // Send the form data using EmailJS
+            emailjs.send("service_2btqguv", "template_dv75wf6", {
+                name: name,
+                email: email,
+                message: message
+            })
                 .then(function (response) {
-                    console.log('Success:', response);
-                    alert('Your message has been sent!');
+                    alert('Message sent successfully!');
+                    document.getElementById('contact-form').reset(); // Reset the form after successful submission
                 }, function (error) {
-                    console.log('Error:', error);
-                    alert('There was an error sending your message. Please try again later.');
+                    alert('Failed to send message. Please try again later.');
                 });
         });
+
+
+
     </script>
+
+
 </body>
 
 </html>
